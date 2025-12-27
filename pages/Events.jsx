@@ -448,7 +448,7 @@ export default function Events() {
           </div>
           <div id="spk3">
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+              href="https://unstop.com/competitions/sparkle-ascend-2026-udgam-2026-iit-guwahati-1603606?lb=h62eJ0a"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
