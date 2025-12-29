@@ -7,7 +7,7 @@ export default function InfoSection() {
                         What is UDGAM?
                     </div>
                     <div id="udgam-info-text" className='w-full text-[#000] text-center font-inter text-[1.12vw] max-md:text-[2.5vw] font-normal leading-normal item-center justify-center px-[5%]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex quos ullam eius, quod incidunt delectus repudiandae, deserunt accusamus nemo molestiae sapiente placeat assumenda laboriosam, cum officiis. Animi, fugit consectetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut similique libero dolorum voluptatum quaerat optio facere.
+                        UDGAM is the flagship 2-day annual Entrepreneurship Summit of E-Cell, IIT Guwahati, held every January, bringing together founders, investors, product leaders, and aspiring entrepreneurs from across the country. Through workshops, keynote sessions, competitions, and networking opportunities, it fosters entrepreneurial thinking and serves as a catalyst for innovation and startup culture in North-East India and beyond.
                     </div> 
                 </div>
                 <div id="video-card" className='h-[60%] rounded-[1.5rem] max-md:rounded-[2vw] border-[3px] border-[#141131] bg-[#FFF9F0] mt-4 max-md:mt-0'>

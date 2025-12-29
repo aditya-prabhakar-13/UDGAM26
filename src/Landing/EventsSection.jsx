@@ -18,11 +18,11 @@ export default function EventsSection() {
     const minSwipeDistance = 50; // Threshold for a valid swipe
 
     const eventComponents = [
-        <EventCardPlaceholder key="1" title="ERC" color="bg-purple-600" />,
-        <EventCardPlaceholder key="2" title="LIAR'S FORTUNE" color="bg-blue-600" />,
-        <EventCardPlaceholder key="3" title="IPL AUCTION" color="bg-pink-600" />,
-        <EventCardPlaceholder key="4" title="ESCAPE ROOM" color="bg-indigo-600" />,
-        <EventCardPlaceholder key="5" title="MADVERTISING" color="bg-green-600" />,
+        <EventCardPlaceholder key="1" title="DISRUPT" color="bg-purple-600" />,
+        <EventCardPlaceholder key="2" title="PMX" color="bg-blue-600" />,
+        <EventCardPlaceholder key="3" title="SPARKLE" color="bg-pink-600" />,
+        <EventCardPlaceholder key="4" title="STARTUP-EXPO" color="bg-indigo-600" />,
+        <EventCardPlaceholder key="5" title="INTERNFAIR" color="bg-green-600" />,
     ];
     const lenEvents = eventComponents.length;
 
