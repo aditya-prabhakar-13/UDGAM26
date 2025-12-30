@@ -44,8 +44,8 @@
 .image-container1 {
     display: flex;
     flex-direction: column;
-    width: 24.14vw;
-    height: 14.46vw;
+    width: 26.14vw;
+    height: 18.46vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -62,7 +62,7 @@
     top: -3.97vw;
     left: -7.94vw;
     width: 10.25vw;
-    height: 10.45vw;
+    height: 13.45vw;
     background: #141131;
     border-radius: 27%;
     z-index: 2;
@@ -176,7 +176,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 22.07vw;
+    width: 24.07vw;
     height: 20.07vw;
     border-radius: 2.95vw;
     align-items: center;
@@ -195,8 +195,8 @@
 .image-container3 {
     display: flex;
     flex-direction: column;
-    width: 22.07vw;
-    height: 25.25vw;
+    width: 24.07vw;
+    height: 21.25vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -209,7 +209,7 @@
 .image-container4 {
     display: flex;
     flex-direction: column;
-    width: 22.07vw;
+    width: 24.07vw;
     height: 22vw;
     border-radius: 2.95vw;
     align-items: center;
@@ -261,8 +261,8 @@
 .image-container7 {
     display: flex;
     flex-direction: column;
-    width: 16.72vw;
-    height: 28.4vw;
+    width: 17vw;
+    height: 28.9vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -744,6 +744,22 @@
 
 .if:hover .if-text {
     display: none;
+}
+
+.if:hover .if-image1 {
+    opacity: 0;
+}
+
+.if:hover .if-image2 {
+    opacity: 0;
+}
+
+.sparkle:hover .sparkle-image1 {
+    opacity: 0;
+}
+
+.disrupt:hover .disrupt-image1 {
+    opacity: 0;
 }
 
 .website {
