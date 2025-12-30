@@ -1,64 +1,31 @@
 import React from 'react' 
 import './OurTeam.css';
-import convenerPhoto from "../assets/convinormal.png";
+import convenerPhoto from "../assets/ourteam/convinormal.png";
 // import transparent from "../assets/transparent.png";
-<<<<<<< HEAD:src/OurTeam/OurTeam.jsx
-import subtract from "../assets/Subtract.svg";
-// import Rectangle14 from "../assets/Rectangle14.svg";
-import our from "../assets/our.png";
-=======
 import subtract from "../assets/ourteam/Subtract.svg";
 // import Rectangle14 from "../assets/Rectangle14.svg";
 import our from "../assets/ourteam/our.png";
->>>>>>> 011b6509e3e426529363805a38a52700f738adaa:src/OurTeam/OurTeams.jsx
 // import rectangleleft from "../assets/rectangle-left.svg";
 // import design from "../assets/design.svg";
 // import ls from "../assets/ls.svg";
 // import disrupt from "../assets/disrupt.svg";
-import disrupt2 from "../assets/disrupt2.svg";
+import disrupt2 from "../assets/ourteam/disrupt2.svg";
 // import expo from "../assets/expo.svg";
-import expo2 from "../assets/expo2.svg";
+import expo2 from "../assets/ourteam/expo2.svg";
 // import ifbg from "../assets/ifbg.svg";
-import if1 from "../assets/if1.svg";
-import if2 from "../assets/if2.svg";
+import if1 from "../assets/ourteam/if1.svg";
+import if2 from "../assets/ourteam/if2.svg";
 // import ina from "../assets/ina.svg";
 // import marky from "../assets/marky.svg";
 // import prb from "../assets/prb.svg";
 // import website from "../assets/website.svg";
 // import sparkle from "../assets/sparkle.svg";
-import sparkle2 from "../assets/sparkle2.svg";
-import purple from "../assets/purple.svg";
-import pmxpng from "../assets/pmxpng.png";
-import ifpng from "../assets/ifpng.png";
+import sparkle2 from "../assets/ourteam/sparkle2.svg";
+import purple from "../assets/ourteam/purple.svg";
+import pmxpng from "../assets/ourteam/pmxpng.png";
+import ifpng from "../assets/ourteam/ifpng.png";
 // import websitebg from "../assets/websitebg.svg";
-<<<<<<< HEAD:src/OurTeam/OurTeam.jsx
 // import webpng from "../assets/webpng.png";
-import designpng from "../assets/designpng.png";
-import sparklepng from "../assets/sparklepng.png";
-import lspng from "../assets/lspng.png";
-import inapng from "../assets/inapng.png";
-import disruptpng from "../assets/disruptpng.png";
-import marketingpng from "../assets/marketingpng.png";
-import prbpng from "../assets/prbpng.png";
-import expopng from "../assets/expopng.png";
-import phone from "../assets/phone.svg";
-import mail from "../assets/Mail.svg";
-import linkedin from "../assets/linkedin.svg";
-import rishi from "../assets/rishi.jpg";
-import sanika from "../assets/sanika.png";
-import kartik from "../assets/kartik.jpg";
-import kushagra from "../assets/kushagra.jpg";
-import madhav from "../assets/madhav.jpg";
-import lakshya from "../assets/lakshya.jpg";
-import krrish from "../assets/krrish.jpeg";
-import utkarsh from "../assets/utkarsh.jpeg";
-import shlok from "../assets/shlok.jpg";
-import suramya from "../assets/suramya.jpeg";
-import abhyuday from "../assets/abhyuday.jpg";
-import saumya from "../assets/saumya.jpeg";
-const OurTeam = () => {
-=======
-import webpng from "../assets/ourteam/webpng.png";
 import designpng from "../assets/ourteam/designpng.png";
 import sparklepng from "../assets/ourteam/sparklepng.png";
 import lspng from "../assets/ourteam/lspng.png";
@@ -67,8 +34,22 @@ import disruptpng from "../assets/ourteam/disruptpng.png";
 import marketingpng from "../assets/ourteam/marketingpng.png";
 import prbpng from "../assets/ourteam/prbpng.png";
 import expopng from "../assets/ourteam/expopng.png";
-const OurTeams = () => {
->>>>>>> 011b6509e3e426529363805a38a52700f738adaa:src/OurTeam/OurTeams.jsx
+import phone from "../assets/ourteam/phone.svg";
+import mail from "../assets/ourteam/Mail.svg";
+import linkedin from "../assets/ourteam/linkedin.svg";
+import rishi from "../assets/ourteam/rishi.jpg";
+import sanika from "../assets/ourteam/sanika.png";
+import kartik from "../assets/ourteam/kartik.jpg";
+import kushagra from "../assets/ourteam/kushagra.jpg";
+import madhav from "../assets/ourteam/madhav.jpg";
+import lakshya from "../assets/ourteam/lakshya.jpg";
+import krrish from "../assets/ourteam/krrish.jpeg";
+import utkarsh from "../assets/ourteam/utkarsh.jpeg";
+import shlok from "../assets/ourteam/shlok.jpg";
+import suramya from "../assets/ourteam/suramya.jpeg";
+import abhyuday from "../assets/ourteam/abhyuday.jpg";
+import saumya from "../assets/ourteam/saumya.jpeg";
+const OurTeam = () => {
     return (
             <section className="our-team">
                   <div className='Heading'>
@@ -101,7 +82,7 @@ const OurTeams = () => {
                     <div className='image-container2' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${rishi})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>RISHI AGARWAL</div>
                     <div className='POR'>STARTUP EXPO HEAD</div>
-                        <img src={subtract} className="subtract-left" />
+                        
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+919351127432">
@@ -120,10 +101,12 @@ const OurTeams = () => {
                           </div>
                         </div>
                     </div>
-
+                    <div className="star">
+                        <img src={subtract} className="subtract-left" />
                     <div className='image-container3' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${sanika})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
-                    <div className='Name'>SANIKA MADKE</div>
-                        <div className='POR'>CONVENER</div>
+                        <div className='Name'>SANIKA MADKE</div>
+                        <div className='POR'>DESIGN HEAD</div>
+                        
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+919146073490">
@@ -142,10 +125,10 @@ const OurTeams = () => {
                           </div>
                         </div>
                     </div>
-
+                </div>
                     <div className='image-container4' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${kartik})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
-                    <div className='Name'>KARTIK</div>
-                        <div className='POR'>CONVENER</div>
+                    <div className='Name'>KARTIK BISHT</div>
+                        <div className='POR'>INTERNFAIR HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+917505641236">
@@ -177,8 +160,8 @@ const OurTeams = () => {
                 <div className="card">
                             <img src={lakshya} alt="profile" />
                             <div className="text-cut">
-                    <div className='Name'>LAKSHYA CHOUDHARY</div>
-                                <div className='POR'>CONVENER</div>
+                    <div className='Name-cut'>LAKSHYA CHOUDHARY</div>
+                                <div className='POR-cut'>UDGAM DESIGN HEAD</div>
                             </div>
                         </div>
                         <div className="overlay-cut">
@@ -202,7 +185,7 @@ const OurTeams = () => {
                     
                 <div className='image-container6' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${kushagra})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>KUSHARGA JAIN</div>
-                        <div className='POR'>CONVENER</div>
+                        <div className='POR'>MARKETING HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+918852963846">
@@ -224,7 +207,7 @@ const OurTeams = () => {
 
                 <div className='image-container7' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${madhav})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>MADHAV GOEL</div>
-                        <div className='POR'>CONVENER</div>
+                        <div className='POR'>LECTURE SERIES & WORKSHOPS HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+918318118023">
@@ -254,7 +237,7 @@ const OurTeams = () => {
 
                     <div className='image-container8' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${krrish})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>KRRISH KAVYA</div>
-                        <div className='POR'>INA & COMPETITIONS HEAD</div>
+                        <div className='POR'>EVENTS HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+918229027032">
@@ -298,7 +281,7 @@ const OurTeams = () => {
 
                     <div className='image-container10' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${shlok})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>SHLOK SURAIYA</div>
-                        <div className='POR'>CONVENER</div>
+                        <div className='POR'>MARKETING HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+919820567744">
@@ -328,7 +311,7 @@ const OurTeams = () => {
 
                 <div className='image-container11' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${suramya})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>SURAMYA SINGH</div>
-                        <div className='POR'>CONVENER</div>
+                        <div className='POR'>PR & BRANDING HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+919794894424">
@@ -369,11 +352,12 @@ const OurTeams = () => {
                           </div>
                         </div>
                     </div>
-
+                    <div className="star">
+                        <img src={subtract} className="subtract-right" />
                 <div className='image-container13' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${saumya})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>SAUMYA JAIN</div>
-                        <div className='POR'>CONVENER</div>
-                        <img src={subtract} className="subtract-right" />
+                        <div className='POR'>DESIGN HEAD</div>
+                        
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+917878870170">
@@ -391,7 +375,8 @@ const OurTeams = () => {
                                 </a>
                           </div>
                         </div>
-                    </div>
+                        </div>
+                        </div>
                 </div>
             </div>
 
@@ -619,4 +604,4 @@ const OurTeams = () => {
             </div>
                 </section>
         );
-}; export default OurTeams;
+}; export default OurTeam;
