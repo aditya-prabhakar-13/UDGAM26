@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 
-const EventCardPlaceholder = ({ title, color }) => (
+const EventCardPlaceholder = ({title, color, regLink}) => (
     <div className={`w-full h-full ${color} flex flex-col items-center justify-center p-8 max-md:p-0 text-center border-4 border-[#141131] rounded-[2rem]`}>
         <h2 className="text-4xl font-black text-white font-['Creato_Display'] mb-4 tracking-wider">{title}</h2>
-        <button className="bg-[#141131] text-[#FFF9F0] px-6 py-2 rounded-lg font-bold font-inter mt-4 hover:scale-105 transition-transform">
-            REGISTER NOW
-        </button>
+        <a href={regLink} target="_blank" rel="noopener noreferrer">
+            <button className="bg-[#141131] text-[#FFF9F0] px-6 py-2 rounded-lg font-bold font-inter mt-4 hover:scale-105 transition-transform">
+                REGISTER NOW
+            </button>
+        </a>
     </div>
 );
 
@@ -18,11 +20,11 @@ export default function EventsSection() {
     const minSwipeDistance = 50; // Threshold for a valid swipe
 
     const eventComponents = [
-        <EventCardPlaceholder key="1" title="DISRUPT" color="bg-purple-600" />,
-        <EventCardPlaceholder key="2" title="PMX" color="bg-blue-600" />,
-        <EventCardPlaceholder key="3" title="SPARKLE" color="bg-pink-600" />,
-        <EventCardPlaceholder key="4" title="STARTUP-EXPO" color="bg-indigo-600" />,
-        <EventCardPlaceholder key="5" title="INTERNFAIR" color="bg-green-600" />,
+        <EventCardPlaceholder key="1" title="DISRUPT" color="bg-purple-600" regLink = "https://unstop.com/competitions/disrupt26-the-ultimate-startup-bootcamp-iit-guwahati-1545893"/>,
+        <EventCardPlaceholder key="2" title="PMX" color="bg-blue-600" regLink = "https://unstop.com/competitions/pmx-2026-the-product-management-expedition-udgam-2026-iit-guwahati-1602663"/>,
+        <EventCardPlaceholder key="3" title="SPARKLE" color="bg-pink-600" regLink = "https://unstop.com/competitions/sparkle-ascend-2026-udgam-2026-iit-guwahati-1603606?lb=h62eJ0a"/>,
+        <EventCardPlaceholder key="4" title="STARTUP-EXPO" color="bg-indigo-600" regLink = "https://unstop.com/competitions/startup-expo-udgam-2026-iit-guwahati-1581666"/>,
+        <EventCardPlaceholder key="5" title="INTERNFAIR" color="bg-green-600" regLink = "https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"/>,
     ];
     const lenEvents = eventComponents.length;
 
