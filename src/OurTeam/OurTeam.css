@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 26.14vw;
-    height: 18.46vw;
+    height: 22.46vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -177,7 +177,7 @@
     display: flex;
     flex-direction: column;
     width: 24.07vw;
-    height: 20.07vw;
+    height: 23.07vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -277,7 +277,7 @@
     display: flex;
     flex-direction: column;
     width: 18.75vw;
-    height: 22.5vw;
+    height: 26vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -323,7 +323,7 @@
     display: flex;
     flex-direction: column;
     width: 18.75vw;
-    height: 19.4vw;
+    height: 21.4vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -339,7 +339,7 @@
     display: flex;
     flex-direction: column;
     width: 18.75vw;
-    height: 23.5vw;
+    height: 25vw;
     border-radius: 2.95vw;
     align-items: center;
     justify-content: end;
@@ -514,12 +514,12 @@
 
     width: 17.3vw;
     left: 1.4vw;
-    top: 13.8vw;
+    top: 13.5vw;
     position: absolute;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.53vw;
+    gap: 0vw;
     display: inline-flex
 }
 
@@ -761,6 +761,9 @@
 .disrupt:hover .disrupt-image1 {
     opacity: 0;
 }
+.expo:hover .expo-image1 {
+    opacity: 0;
+}
 
 .website {
     position: relative;
@@ -992,6 +995,7 @@
     height: 29.5vw;
     overflow: hidden;
     border-radius: 2.95vw;
+    
 }
 
 .marky-text {
@@ -1005,7 +1009,24 @@
     left: 1vw;
 }
 
-.marky:hover .design-managers span {
+.marky-managers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+    gap: 0.3vw;
+}
+
+.marky-managers span {
+    font-family: 'Montserrat';
+    color: #141131;
+    font-size: 1.5vw;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.marky:hover .marky-managers span {
     opacity: 1;
 }
 
@@ -1051,7 +1072,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4.2vw;
+    margin-top: 7.2vw;
 
     gap: 0.1vw;
 }

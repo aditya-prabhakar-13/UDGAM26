@@ -551,7 +551,7 @@ const OurTeam = () => {
                     </div>
                     <div className="marky" style={{backgroundImage: `url(${marketingpng})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                         <div className="marky-text">MARKETING</div>
-                        <div className="design-managers">
+                        <div className="marky-managers">
                             <span>Kurra sravan </span>
                             <span>Akshaj Tiwari</span>
                             <span>Aryan Prajapati </span>
