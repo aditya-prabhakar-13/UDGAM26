@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 // --- Image Imports ---
-import internPin from "../src/assets/events/assets/internpin.svg";
+import internPin from "../src/assets/events/assets/interpin.svg";
 import hired from "../src/assets/events/assets/hired.svg";
 import internTie from "../src/assets/events/assets/interntie.svg";
 import redPin from "../src/assets/events/assets/redpin.svg";
@@ -12,7 +12,7 @@ import sexpoBg from "../src/assets/events/assets/sexpobg.svg";
 import exporange from "../src/assets/events/assets/exporange.svg";
 import sexporange from "../src/assets/events/assets/sexporange.svg";
 import expoWrite from "../src/assets/events/assets/expowrite.svg";
-import expoDiamond from "../src/assets/events/assets/expodiamond.svg";
+import expoDiamond from "../src/assets/events/assets/sexpodiamond.svg";
 import pmx1 from "../src/assets/events/assets/pmx1.svg";
 import pmx2 from "../src/assets/events/assets/pmx2.png";
 import spkImg1 from "../src/assets/events/assets/spkimg1.svg";
