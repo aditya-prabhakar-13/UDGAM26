@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
-// --- IMPORT IMAGES HERE ---
-import internTie from "../assets/events/assets/intern_tie_straight.svg";
-import paperclips from "../assets/events/assets/paperclips_both.svg";
-import hired from "../assets/events/assets/hired.svg";
-import disrupt00 from "/disrupt00.svg";
-import disrupt01 from "/disrupt01.svg";
-import disrupt10 from "/disrupt10.svg";
+import InternfairCard from './EventCards/InternfairCard';
+import DisruptCard from './EventCards/DisruptCard';
 
 const EventCardPlaceholder = ({title, color, regLink}) => (
     <div className={`w-full h-full ${color} flex flex-col items-center justify-center p-8 max-md:p-0 text-center border-4 border-[#141131] rounded-[2rem]`}>
@@ -20,238 +15,8 @@ const EventCardPlaceholder = ({title, color, regLink}) => (
     </div>
 );
 
-const InternfairCard = ({ regLink, passLink }) => {
-  return (
-    <div className="w-full h-full flex flex-row items-center justify-between p-10 bg-[#FFF2E1] rounded-[2rem] border-4 border-[#141131]">
-      
-      {/* LEFT CONTENT */}
-      <div className="w-[55%] flex flex-col gap-6">
-        <h1 className="font-['Creato_Display'] text-[#032D29] text-[4.5rem] font-black leading-[0.9]">
-          INTERNFAIR
-        </h1>
-
-        <h2 className="font-['Creato_Display'] text-[#032D29] text-[32px] font-semibold">
-          Unlock Industry Partnership
-        </h2>
-
-        <p className="font-['Inter'] text-[#032D29] text-[1.05rem] leading-relaxed max-w-xl">
-          Internfair is a platform exclusively for IIT Guwahati students,
-          offering internships in diverse profiles like Software Development,
-          Analytics, and Product Management. It helps students gain industry
-          exposure and prepares them for upcoming placements and internships.
-        </p>
-
-        {/* BUTTONS */}
-        <div className="flex gap-4 mt-2">
-          {/* NEED A PASS */}
-        <a href={regLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex items-center gap-3 bg-[#032D29] text-[#FFF2E1] px-6 py-3 min-h-[52px] rounded-xl font-['Inter'] font-semibold hover:scale-105 transition-transform">
-                NEED A PASS
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-                >
-                <path
-                    d="M12.6022 0.938232C12.6022 0.420103 12.1822 7.76841e-05 11.6641 7.86956e-05L3.22068 7.84427e-05C2.70256 7.81055e-05 2.28253 0.420104 2.28253 0.938232C2.28253 1.45636 2.70256 1.87638 3.22068 1.87638H10.7259V9.38161C10.7259 9.89974 11.1459 10.3198 11.6641 10.3198C12.1822 10.3198 12.6022 9.89974 12.6022 9.38161L12.6022 0.938232ZM0.664062 11.9382L1.32744 12.6016L12.3274 1.60161L11.6641 0.938232L11.0007 0.274857L0.000687975 11.2749L0.664062 11.9382Z"
-                    fill="#FFF2E1"
-                />
-                </svg>
-            </button>
-        </a>
-        {/* KNOW MORE */}
-        <a href={regLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex items-center gap-4 bg-[#FBD03E] text-[#2F2F2F] px-6 py-3 min-h-[52px] rounded-xl font-extrabold hover:scale-105 transition-transform">
-                KNOW MORE
-
-                <span className="w-8 h-8 rounded-lg border-2 border-[#032D29] flex items-center justify-center flex-shrink-0">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="13"
-                        height="13"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                    >
-                        <path
-                        d="M3 12h18M15 5l7 7-7 7"
-                        stroke="#032D29"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        />
-                    </svg>
-                </span>
-            </button>
-        </a>
-        </div>
-      </div>
-
-      {/* RIGHT 2x2 GRID */}
-      <div className="w-[40%] grid grid-cols-2 grid-rows-2 gap-4">
-        <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6">
-            <img
-            src={internTie} // FIXED
-            alt=""
-            className="rotate-0 max-w-none w-[300%] h-auto translate-y-3"
-            />
-
-        </div>
-
-        <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6">
-          <img
-            src={paperclips} // FIXED
-            alt=""
-            className="rotate-[15deg] max-w-none w-[300%] h-auto"
-            />
-        </div>
-
-        <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6 rotate-[-6deg]">
-          <img
-            src={hired} // FIXED
-            alt=""
-            className="rotate-[12deg] max-w-none w-[200%] h-auto"
-            />
-        </div>
-
-        <div className="rounded-2xl bg-[#FBD03E] flex flex-col justify-between p-6 text-[#032D29] font-['Inter'] h-full">
-  
-            <div className="text-[40px] font-extrabold tracking-[0.2em] text-left leading-none">
-                JAN
-            </div>
-
-            <div className="flex justify-end items-start leading-none leading-none">
-                <span className="text-[52px] font-extrabold">23</span>
-                <span className="text-[18px] font-bold mt-1 ml-1">rd</span>
-            </div>
-
-            <div className="text-[18px] font-semibold tracking-[0.15em] text-center leading-none">
-                SATURDAY
-            </div>
-
-        </div>
 
 
-      </div>
-    </div>
-  );
-};
-
-const DisruptCard = ({ regLink, passLink }) => {
-  return (
-    <div className="w-full h-full flex flex-row items-center justify-between p-10 bg-[#070C17] rounded-[2rem] border-1 border-[#FFF9F0]">
-      
-      {/* LEFT CONTENT */}
-      <div className="w-[55%] flex flex-col gap-6">
-        <h1 className="font-['Creato_Display'] text-[#FEFBF1] text-[4.5rem] font-black leading-[0.9]">
-          DISRUPT
-        </h1>
-
-        <h2 className="font-['Creato_Display'] text-[#D9FE78] text-[32px] font-semibold">
-          Pitch Ideas, Win Investments
-        </h2>
-
-        <p className="font-['Inter'] text-[#FEFBF1] text-[1.05rem] leading-relaxed max-w-xl">
-          Disrupt Is North-East India's Largest Pitching Battle,OfferingStartups The Opportunity To Pitch Ideas Investors, VCs and Angels. Finalist Receive Mentorship ,Tools , Prizes With Winner Securing Investments To Scale Their Ventures
-        </p>
-
-        {/* BUTTONS */}
-        <div className="flex gap-4 mt-2">
-          {/* NEED A PASS */}
-        <a href={regLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex items-center gap-3 bg-[#D9FE78] text-[#2F2F2F] px-6 py-3 min-h-[52px] rounded-xl font-['Inter'] font-semibold hover:scale-105 transition-transform">
-                REGISTER
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-                >
-                <path
-                    d="M12.6022 0.938232C12.6022 0.420103 12.1822 7.76841e-05 11.6641 7.86956e-05L3.22068 7.84427e-05C2.70256 7.81055e-05 2.28253 0.420104 2.28253 0.938232C2.28253 1.45636 2.70256 1.87638 3.22068 1.87638H10.7259V9.38161C10.7259 9.89974 11.1459 10.3198 11.6641 10.3198C12.1822 10.3198 12.6022 9.89974 12.6022 9.38161L12.6022 0.938232ZM0.664062 11.9382L1.32744 12.6016L12.3274 1.60161L11.6641 0.938232L11.0007 0.274857L0.000687975 11.2749L0.664062 11.9382Z"
-                    fill="#2F2F2F"
-                />
-                </svg>
-            </button>
-        </a>
-        {/* KNOW MORE */}
-        <a href={regLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex items-center gap-4 bg-[#D9FE78] text-[#2F2F2F] px-6 py-3 min-h-[52px] rounded-xl font-extrabold hover:scale-105 transition-transform">
-                KNOW MORE
-
-                <span className="w-8 h-8 rounded-lg border-2 border-[#032D29] flex items-center justify-center flex-shrink-0">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="13"
-                        height="13"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                    >
-                        <path
-                        d="M3 12h18M15 5l7 7-7 7"
-                        stroke="#032D29"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        />
-                    </svg>
-                </span>
-            </button>
-        </a>
-        </div>
-      </div>
-
-      {/* RIGHT 2x2 GRID */}
-      <div className="w-[40%] grid grid-cols-2 grid-rows-2 gap-4">
-        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
-            <img
-            src={disrupt00} // FIXED
-            alt=""
-            className="rotate-0 max-w-none w-[300%] h-auto translate-y-3"
-            />
-
-        </div>
-
-        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
-          <img
-            src={disrupt01} // FIXED
-            alt=""
-            className="rotate-[15deg] max-w-none w-[300%] h-auto"
-            />
-        </div>
-
-        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6 rotate-[-6deg]">
-          <img
-            src={disrupt10} // FIXED
-            alt=""
-            className="rotate-[12deg] max-w-none w-[200%] h-auto"
-            />
-        </div>
-
-        <div className="rounded-2xl bg-[#1B46F4] flex flex-col justify-between p-6 text-[#FEFBF1] font-['Inter'] h-full">
-  
-            <div className="text-[40px] font-extrabold tracking-[0.2em] text-left leading-none">
-                JAN
-            </div>
-
-            <div className="flex justify-end items-start leading-none leading-none">
-                <span className="text-[52px] font-extrabold">23</span>
-                <span className="text-[18px] font-bold mt-1 ml-1">rd</span>
-            </div>
-
-            <div className="text-[18px] font-semibold tracking-[0.15em] text-center leading-none">
-                SATURDAY
-            </div>
-
-        </div>
-
-
-      </div>
-    </div>
-  );
-};
 
 export default function EventsSection() {
     const [currentEvent, setCurrentEvent] = useState(0);
@@ -305,12 +70,12 @@ export default function EventsSection() {
         }
     };
 
-    useEffect(() => {
-        const eventInterval = setInterval(() => {
-            nextEventSlide();
-        }, 10000);
-        return () => clearInterval(eventInterval);
-    }, [currentEvent]); 
+    // useEffect(() => {
+    //     const eventInterval = setInterval(() => {
+    //         nextEventSlide();
+    //     }, 10000);
+    //     return () => clearInterval(eventInterval);
+    // }, [currentEvent]); 
 
     const getEventStyle = (index) => {
         if (index === currentEvent) return "z-20 opacity-100 scale-100 translate-x-0 brightness-100 blur-none pointer-events-auto shadow-2xl";
@@ -350,7 +115,7 @@ export default function EventsSection() {
                 <div className="relative w-[85%] md:w-[75%] lg:w-[80%] h-full flex items-center justify-center perspective-1000">
 
                     {eventComponents.map((Component, index) => (
-                        <div key={index} className={`absolute top-0 w-full max-md:h-[50vh] h-full rounded-[2rem] transition-all duration-700 ease-in-out transform shadow-xl border-[3px] border-[#141131]/20 bg-[#FFF2E1] ${getEventStyle(index)}`}>
+                        <div key={index} className={`absolute top-0 w-full max-md:h-[40vh] h-full rounded-[2rem] max-md:rounded-[2.1vw] transition-all duration-700 ease-in-out transform shadow-xl border-[3px] border-[#141131]/20 bg-[#FFF2E1] ${getEventStyle(index)}`}>
                             {Component}
                         </div>
                     ))}
