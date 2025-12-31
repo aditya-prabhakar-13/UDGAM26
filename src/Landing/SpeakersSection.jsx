@@ -62,8 +62,18 @@ export default function SpeakersSection() {
                             // Width: w-[22vw] -> max-md:w-[32vw] (Fits ~3 cards)
                             // Height: h-[30vw] -> max-md:h-[45vw]
                             // Hover: hover:h-[34vw] -> max-md:hover:h-[49vw]
-                            className="w-[22vw] max-md:w-[42vw] h-[30vw] max-md:h-[70vw] flex-shrink-0 border-[3px] border-[#141131] rounded-[1.31vw] flex flex-col items-center justify-end transition-all duration-300 ease-out hover:h-[34vw] max-md:hover:h-[49vw] hover:z-900 relative group"
-                        >
+                            className="w-[22vw] max-md:w-[42vw] 
+                                /* FIX: Set base height smaller (e.g., 49vw) */
+                                h-[30vw] max-md:h-[49vw] 
+                                flex-shrink-0 
+                                border-[3px] border-[#141131] 
+                                rounded-[1.31vw] 
+                                flex flex-col items-center justify-end 
+                                transition-all duration-300 ease-out 
+                                /* FIX: Set hover height larger (e.g., 70vw) */
+                                hover:h-[34vw] max-md:hover:h-[70vw] 
+                                hover:z-900 relative group"
+                            >
                             <div className="w-full h-[75%] relative overflow-hidden rounded-[1.31vw] border border-[#000] aspect-[369/353]">
                                 <img src={speaker.img} alt={speaker.name} className="w-full h-full object-cover" />
                             </div>
