@@ -1,5 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+
+// --- IMPORT IMAGES HERE ---
+import internTie from "../assets/events/assets/intern_tie_straight.svg";
+import paperclips from "../assets/events/assets/paperclips_both.svg";
+import hired from "../assets/events/assets/hired.svg";
+import disrupt00 from "/disrupt00.svg";
+import disrupt01 from "/disrupt01.svg";
+import disrupt10 from "/disrupt10.svg";
+
 const EventCardPlaceholder = ({title, color, regLink}) => (
     <div className={`w-full h-full ${color} flex flex-col items-center justify-center p-8 max-md:p-0 text-center border-4 border-[#141131] rounded-[2rem]`}>
         <h2 className="text-4xl font-black text-white font-['Creato_Display'] mb-4 tracking-wider">{title}</h2>
@@ -10,6 +19,7 @@ const EventCardPlaceholder = ({title, color, regLink}) => (
         </a>
     </div>
 );
+
 const InternfairCard = ({ regLink, passLink }) => {
   return (
     <div className="w-full h-full flex flex-row items-center justify-between p-10 bg-[#FFF2E1] rounded-[2rem] border-4 border-[#141131]">
@@ -82,7 +92,7 @@ const InternfairCard = ({ regLink, passLink }) => {
       <div className="w-[40%] grid grid-cols-2 grid-rows-2 gap-4">
         <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6">
             <img
-            src="../src/assets/events/assets/intern_tie_straight.svg"
+            src={internTie} // FIXED
             alt=""
             className="rotate-0 max-w-none w-[300%] h-auto translate-y-3"
             />
@@ -91,7 +101,7 @@ const InternfairCard = ({ regLink, passLink }) => {
 
         <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6">
           <img
-            src="../src/assets/events/assets/paperclips_both.svg"
+            src={paperclips} // FIXED
             alt=""
             className="rotate-[15deg] max-w-none w-[300%] h-auto"
             />
@@ -99,7 +109,7 @@ const InternfairCard = ({ regLink, passLink }) => {
 
         <div className="rounded-2xl bg-[#EFEFEF] flex items-center justify-center p-6 rotate-[-6deg]">
           <img
-            src="../src/assets/events/assets/hired.svg"
+            src={hired} // FIXED
             alt=""
             className="rotate-[12deg] max-w-none w-[200%] h-auto"
             />
@@ -197,7 +207,7 @@ const DisruptCard = ({ regLink, passLink }) => {
       <div className="w-[40%] grid grid-cols-2 grid-rows-2 gap-4">
         <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
             <img
-            src="/disrupt00.svg"
+            src={disrupt00} // FIXED
             alt=""
             className="rotate-0 max-w-none w-[300%] h-auto translate-y-3"
             />
@@ -206,7 +216,7 @@ const DisruptCard = ({ regLink, passLink }) => {
 
         <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
           <img
-            src="/disrupt01.svg"
+            src={disrupt01} // FIXED
             alt=""
             className="rotate-[15deg] max-w-none w-[300%] h-auto"
             />
@@ -214,7 +224,7 @@ const DisruptCard = ({ regLink, passLink }) => {
 
         <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6 rotate-[-6deg]">
           <img
-            src="/disrupt10.svg"
+            src={disrupt10} // FIXED
             alt=""
             className="rotate-[12deg] max-w-none w-[200%] h-auto"
             />
