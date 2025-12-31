@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import InternfairCard from './EventCards/InternfairCard';
 import DisruptCard from './EventCards/DisruptCard';
+import SexpoCard from './EventCards/SexpoCard';
 
 const EventCardPlaceholder = ({title, color, regLink}) => (
     <div className={`w-full h-full ${color} flex flex-col items-center justify-center p-8 max-md:p-0 text-center border-4 border-[#141131] rounded-[2rem]`}>
@@ -16,8 +17,6 @@ const EventCardPlaceholder = ({title, color, regLink}) => (
 );
 
 
-
-
 export default function EventsSection() {
     const [currentEvent, setCurrentEvent] = useState(0);
     const navigate = useNavigate();
@@ -27,19 +26,21 @@ export default function EventsSection() {
     const minSwipeDistance = 50; // Threshold for a valid swipe
 
     const eventComponents = [
-        <EventCardPlaceholder key="1" title="DISRUPT" color="bg-purple-600" regLink = "https://unstop.com/competitions/disrupt26-the-ultimate-startup-bootcamp-iit-guwahati-1545893"/>,
-        <EventCardPlaceholder key="2" title="PMX" color="bg-blue-600" regLink = "https://unstop.com/competitions/pmx-2026-the-product-management-expedition-udgam-2026-iit-guwahati-1602663"/>,
-        <EventCardPlaceholder key="3" title="SPARKLE" color="bg-pink-600" regLink = "https://unstop.com/competitions/sparkle-ascend-2026-udgam-2026-iit-guwahati-1603606?lb=h62eJ0a"/>,
         <DisruptCard
-            key="4"
+            key="1"
             regLink="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
             passLink="#"
         />,
         <InternfairCard
-            key="5"
+            key="2"
             regLink="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
             passLink="#"
         />,
+       <SexpoCard 
+            key="3"
+            regLink="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
+            passLink="#"
+       />,
     ];
     const lenEvents = eventComponents.length;
 

@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // You can now use className="font-tango"
+        tango: ['TangoSans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
