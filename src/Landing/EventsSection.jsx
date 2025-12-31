@@ -220,7 +220,7 @@ const DisruptCard = ({ regLink, passLink }) => {
             />
         </div>
 
-        <div className="rounded-2xl bg-[#1B46F4] flex flex-col justify-between p-6 text-[#032D29] font-['Inter'] h-full">
+        <div className="rounded-2xl bg-[#1B46F4] flex flex-col justify-between p-6 text-[#FEFBF1] font-['Inter'] h-full">
   
             <div className="text-[40px] font-extrabold tracking-[0.2em] text-left leading-none">
                 JAN
