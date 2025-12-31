@@ -2,6 +2,22 @@ import "../src/assets/events/events.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+// --- Image Imports ---
+import internPin from "../src/assets/events/assets/internpin.svg";
+import hired from "../src/assets/events/assets/hired.svg";
+import internTie from "../src/assets/events/assets/interntie.svg";
+import redPin from "../src/assets/events/assets/redpin.svg";
+import yellowPin from "../src/assets/events/assets/yellowpin.svg";
+import sexpoBg from "../src/assets/events/assets/sexpobg.svg";
+import exporange from "../src/assets/events/assets/exporange.svg";
+import sexporange from "../src/assets/events/assets/sexporange.svg";
+import expoWrite from "../src/assets/events/assets/expowrite.svg";
+import expoDiamond from "../src/assets/events/assets/expodiamond.svg";
+import pmx1 from "../src/assets/events/assets/pmx1.svg";
+import pmx2 from "../src/assets/events/assets/pmx2.png";
+import spkImg1 from "../src/assets/events/assets/spkimg1.svg";
+import spkImg2 from "../src/assets/events/assets/spkimg2.svg";
+
 export default function Events() {
   useEffect(() => {
     // Viewport script for Events page only
@@ -160,7 +176,13 @@ export default function Events() {
           <h1>DISRUPT</h1>
           <h2>Pitch Ideas, Win Investments</h2>
           <h3>
-            Disrupt is North-East India’s largest startup pitching arena, built around a 4-month-long intensive bootcamp where selected startups receive mentorship, resources, and guided support to refine their ideas. The journey culminates in a grand pitching finale at UDGAM, where founders present to leading investors, VCs, and angel networks. Finalists gain visibility, tools, and opportunities to secure investments and scale their ventures.
+            Disrupt is North-East India’s largest startup pitching arena, built
+            around a 4-month-long intensive bootcamp where selected startups
+            receive mentorship, resources, and guided support to refine their
+            ideas. The journey culminates in a grand pitching finale at UDGAM,
+            where founders present to leading investors, VCs, and angel
+            networks. Finalists gain visibility, tools, and opportunities to
+            secure investments and scale their ventures.
           </h3>
           <svg
             id="di1"
@@ -200,16 +222,16 @@ export default function Events() {
                   <path
                     d="M19.7029 43.3459L42.6895 20.3594"
                     stroke="black"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M43.346 38.0917V19.7024H24.9567"
                     stroke="black"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -247,18 +269,20 @@ export default function Events() {
           <h1>INTERNFAIR</h1>
           <h2>Unlock Industry Partnership</h2>
           <h3>
-            InternFair is UDGAM’s platform that connects students with leading companies, unlocking valuable internship and networking opportunities across diverse domains. Alongside the main recruitment fair, the Road to InternFair program equips participants with resources, guidance, and project-building support to strengthen their CVs and develop industry-ready skills. It’s the perfect launchpad for students exploring future career paths.
+            InternFair is UDGAM’s platform that connects students with leading
+            companies, unlocking valuable internship and networking
+            opportunities across diverse domains. Alongside the main recruitment
+            fair, the Road to InternFair program equips participants with
+            resources, guidance, and project-building support to strengthen
+            their CVs and develop industry-ready skills. It’s the perfect
+            launchpad for students exploring future career paths.
           </h3>
           <div id="in2">
             <p>Saturday</p>
             <p>
               <span>23rd</span> Jan
             </p>
-            <img
-              src="../src/assets/events/assets/internpin.svg"
-              id="in1"
-              alt=""
-            />
+            <img src={internPin} id="in1" alt="" />
           </div>
           <a
             href="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
@@ -271,59 +295,37 @@ export default function Events() {
               <div id="in32">No, I need a Pass</div>
             </div>
           </a>
-          <img src="../src/assets/events/assets/hired.svg" id="in4" alt="" />
-          <img
-            src="../src/assets/events/assets/interntie.svg"
-            id="in5"
-            alt=""
-          />
-          <img src="../src/assets/events/assets/redpin.svg" id="in6" alt="" />
-          <img
-            src="../src/assets/events/assets/yellowpin.svg"
-            id="in7"
-            alt=""
-          />
+          <img src={hired} id="in4" alt="" />
+          <img src={internTie} id="in5" alt="" />
+          <img src={redPin} id="in6" alt="" />
+          <img src={yellowPin} id="in7" alt="" />
           <div id="in8">Are you ready to enter?</div>
         </section>
 
-        {/* <!-- expo starts  --> */}
+        {/* */}
 
         <section id="expo" className="box">
           <div id="exbg">
-            <img
-              src="../src/assets/events/assets/sexpobg.svg"
-              id="exbbg"
-              alt=""
-            />
+            <img src={sexpoBg} id="exbbg" alt="" />
 
             <picture>
-              <source
-                media="(max-width: 1000px)"
-                srcSet="../src/assets/events/assets/exporange.svg"
-              />
-              <img
-                src="../src/assets/events/assets/sexporange.svg"
-                id="exor"
-                alt="Description"
-              />
+              <source media="(max-width: 1000px)" srcSet={exporange} />
+              <img src={sexporange} id="exor" alt="Description" />
             </picture>
-            <img
-              src="../src/assets/events/assets/expowrite.svg"
-              id="exwr"
-              alt=""
-            />
+            <img src={expoWrite} id="exwr" alt="" />
             <p>
-              Start-Up Expo is UDGAM’s premier platform where startups showcase their innovations and connect with investors, VCs, incubators, and government leaders from across India. Designed for visibility and growth, the Expo helps founders network, gain feedback, and discover opportunities to elevate their ventures to the next level.
+              Start-Up Expo is UDGAM’s premier platform where startups showcase
+              their innovations and connect with investors, VCs, incubators, and
+              government leaders from across India. Designed for visibility and
+              growth, the Expo helps founders network, gain feedback, and
+              discover opportunities to elevate their ventures to the next
+              level.
             </p>
           </div>
           <div id="ex2">
             <p>Sat-Sun</p>
             <p>23rd-24th</p>
-            <img
-              src="../src/assets/events/assets/expodiamond.svg"
-              id="ex3"
-              alt=""
-            />
+            <img src={expoDiamond} id="ex3" alt="" />
           </div>
           <div id="ex4">
             <a
@@ -344,16 +346,16 @@ export default function Events() {
                   <path
                     d="M19.7029 43.3459L42.6895 20.3594"
                     stroke="#EF9539"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M43.346 38.0917V19.7024H24.9567"
                     stroke="#EF9539"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -361,17 +363,24 @@ export default function Events() {
           </div>
         </section>
 
-        {/* <!-- pmx starts  --> */}
+        {/* */}
 
         <section className="box" id="pmx">
           <div id="pmxh">
             <h1>PMx</h1>
             <h2>PRODUCT MANAGEMENT EXPEDITION</h2>
             <h3>
-              PMx is India’s largest product management expedition, bringing together thousands of problem-solvers, designers, and innovators to tackle real-world product case studies. Participants dive into live industry problems, analyze user needs, design solutions, and showcase their product-thinking skills. Perfect for anyone who loves solving complex challenges, PMx offers a high-impact platform to learn, compete, and shine in the world of product management.
+              PMx is India’s largest product management expedition, bringing
+              together thousands of problem-solvers, designers, and innovators
+              to tackle real-world product case studies. Participants dive into
+              live industry problems, analyze user needs, design solutions, and
+              showcase their product-thinking skills. Perfect for anyone who
+              loves solving complex challenges, PMx offers a high-impact
+              platform to learn, compete, and shine in the world of product
+              management.
             </h3>
           </div>
-          <img src="../src/assets/events/assets/pmx1.svg" id="pmx1" alt="" />
+          <img src={pmx1} id="pmx1" alt="" />
           <div id="pmx2">
             <p>Saturday</p>
             <p>
@@ -397,32 +406,38 @@ export default function Events() {
                   <path
                     d="M19.7029 43.3459L42.6895 20.3594"
                     stroke="#EE3B3F"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M43.346 38.0917V19.7024H24.9567"
                     stroke="#EE3B3F"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
             </a>
           </div>
-          <img src="../src/assets/events/assets/pmx2.png" id="pmx4" alt="" />
+          <img src={pmx2} id="pmx4" alt="" />
         </section>
 
-        {/* <!-- sparkle starts  --> */}
+        {/* */}
 
         <section className="box" id="spk">
           <div id="spkh">
             <h1>SPARKLE</h1>
             <h2>The Student Startup Bootcamp</h2>
             <h3>
-              Sparkle is UDGAM’s dedicated platform for school students (Classes 6–12) to explore entrepreneurship, creativity, and problem-solving. It encourages young innovators to think boldly, develop ideas, and present solutions through guided events, activities, and competitions. Designed as a launchpad for budding leaders, Sparkle helps students transform their imagination into real, impactful concepts.
+              Sparkle is UDGAM’s dedicated platform for school students (Classes
+              6–12) to explore entrepreneurship, creativity, and problem-solving.
+              It encourages young innovators to think boldly, develop ideas, and
+              present solutions through guided events, activities, and
+              competitions. Designed as a launchpad for budding leaders, Sparkle
+              helps students transform their imagination into real, impactful
+              concepts.
             </h3>
           </div>
           <div id="spk2">
@@ -450,26 +465,26 @@ export default function Events() {
                   <path
                     d="M19.7029 43.3459L42.6895 20.3594"
                     stroke="#FFF9F0"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M43.346 38.0917V19.7024H24.9567"
                     stroke="#FFF9F0"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
             </a>
           </div>
-          <img src="../src/assets/events/assets/spkimg1.svg" id="spk4" alt="" />
-          <img src="../src/assets/events/assets/spkimg2.svg" id="spk5" alt="" />
+          <img src={spkImg1} id="spk4" alt="" />
+          <img src={spkImg2} id="spk5" alt="" />
         </section>
 
-        {/* <!-- footer starts  --> */}
+        {/* */}
 
         {/* <footer>
           <div id="f1">
@@ -495,8 +510,8 @@ export default function Events() {
                   fill="#FFF9F0"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M81.6648 2.12931e-07C85.6242 3.91257e-08 89.5449 0.783209 93.2029 2.30484C96.8609 3.82647 100.185 6.05673 102.984 8.86833C105.784 11.6799 108.005 15.0178 109.52 18.6913C111.035 22.3648 111.815 26.3021 111.815 30.2783C111.815 34.2546 111.035 38.1919 109.52 41.8654C108.005 45.5389 105.784 48.8768 102.984 51.6884C100.185 54.5 96.8609 56.7302 93.2029 58.2519C91.8032 58.8341 90.3651 59.3082 88.901 59.6717C85.8646 60.4256 82.5615 60.4897 79.813 58.9904C75.7849 56.7931 73.0503 52.5075 73.0503 47.5803V60.5567H60.1287V2.12931e-07H81.6648ZM81.6648 12.9764H73.0503V47.5803H81.6648V47.5814C83.9274 47.5814 86.168 47.1338 88.2584 46.2643C90.3489 45.3947 92.2483 44.1202 93.8482 42.5135C95.4482 40.9067 96.7173 38.9993 97.5832 36.9C98.4491 34.8007 98.8947 32.5506 98.8947 30.2783C98.8947 28.0061 98.4491 25.756 97.5832 23.6567C96.7173 21.5574 95.4482 19.65 93.8482 18.0432C92.2483 16.4365 90.3489 15.162 88.2584 14.2924C86.168 13.4229 83.9274 12.9753 81.6648 12.9753V12.9764Z"
                   fill="#FFF9F0"
                 />
