@@ -71,12 +71,12 @@ export default function EventsSection() {
         }
     };
 
-    // useEffect(() => {
-    //     const eventInterval = setInterval(() => {
-    //         nextEventSlide();
-    //     }, 10000);
-    //     return () => clearInterval(eventInterval);
-    // }, [currentEvent]); 
+    useEffect(() => {
+        const eventInterval = setInterval(() => {
+            nextEventSlide();
+        }, 10000);
+        return () => clearInterval(eventInterval);
+    }, [currentEvent]); 
 
     const getEventStyle = (index) => {
         if (index === currentEvent) return "z-20 opacity-100 scale-100 translate-x-0 brightness-100 blur-none pointer-events-auto shadow-2xl";
