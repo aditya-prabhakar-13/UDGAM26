@@ -51,7 +51,7 @@ import abhyuday from "../assets/ourteam/abhyuday.jpg";
 import saumya from "../assets/ourteam/saumya.jpeg";
 const OurTeam = () => {
     return (
-            <section className="our-team">
+            <section className="our-team max-md:pb-[25vw]">
                   <div className='Heading'>
                     <div className="our-team-heading">OUR TEAM</div>
                   </div>

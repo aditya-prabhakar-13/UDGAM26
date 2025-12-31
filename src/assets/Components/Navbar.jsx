@@ -43,7 +43,7 @@ export default function Navbar() {
 
                     {/* Logo */}
                     <div id="udgam-logo-container" className="p-0">
-                        <a href="#" id="nav-udgam-logo" className="w-[1.125rem] h-[3.1875rem] cursor-pointer block max-md:h-[4.5vh]">
+                        <a href="/" id="nav-udgam-logo" className="w-[1.125rem] h-[3.1875rem] cursor-pointer block max-md:h-[4.5vh]">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 51" fill="none" className="w-[1.125rem] h-[3.1875rem] max-md:h-[4.5vh] ">
                                 <path d="M7.90244 16.0061L12.2965 0L18 18.4594L7.90244 16.0061Z" fill="#FFF9F0" />
                                 <path d="M6.1383 41.8058L17.8958 23.5434L10.7655 51L6.1383 41.8058Z" fill="#FFF9F0" />
@@ -86,7 +86,7 @@ export default function Navbar() {
                 `}>
                     <a href="/" className="hover:text-[#FDD442] transition-colors">Home</a>
                     <a href="/events" className="hover:text-[#FDD442] transition-colors">Events</a>
-                    <a href="/schedule" className="hover:text-[#FDD442] transition-colors">Schedule</a>
+                    <a href="#" className="hover:text-[#FDD442] transition-colors">Schedule</a>
                     <a href="/sponsors" className="hover:text-[#FDD442] transition-colors">Sponsors</a>
                     <a href="/team" className="hover:text-[#FDD442] transition-colors">Our Team</a>
                     <button onClick={scrollToBottom} className="hover:text-[#FDD442] transition-colors">Contact Us</button>
