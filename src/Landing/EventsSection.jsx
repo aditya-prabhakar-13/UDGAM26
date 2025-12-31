@@ -128,6 +128,121 @@ const InternfairCard = ({ regLink, passLink }) => {
   );
 };
 
+const DisruptCard = ({ regLink, passLink }) => {
+  return (
+    <div className="w-full h-full flex flex-row items-center justify-between p-10 bg-[#070C17] rounded-[2rem] border-1 border-[#FFF9F0]">
+      
+      {/* LEFT CONTENT */}
+      <div className="w-[55%] flex flex-col gap-6">
+        <h1 className="font-['Creato_Display'] text-[#FEFBF1] text-[4.5rem] font-black leading-[0.9]">
+          DISRUPT
+        </h1>
+
+        <h2 className="font-['Creato_Display'] text-[#D9FE78] text-[32px] font-semibold">
+          Pitch Ideas, Win Investments
+        </h2>
+
+        <p className="font-['Inter'] text-[#FEFBF1] text-[1.05rem] leading-relaxed max-w-xl">
+          Disrupt Is North-East India's Largest Pitching Battle,OfferingStartups The Opportunity To Pitch Ideas Investors, VCs and Angels. Finalist Receive Mentorship ,Tools , Prizes With Winner Securing Investments To Scale Their Ventures
+        </p>
+
+        {/* BUTTONS */}
+        <div className="flex gap-4 mt-2">
+          {/* NEED A PASS */}
+        <a href={regLink} target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center gap-3 bg-[#D9FE78] text-[#2F2F2F] px-6 py-3 min-h-[52px] rounded-xl font-['Inter'] font-semibold hover:scale-105 transition-transform">
+                REGISTER
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                >
+                <path
+                    d="M12.6022 0.938232C12.6022 0.420103 12.1822 7.76841e-05 11.6641 7.86956e-05L3.22068 7.84427e-05C2.70256 7.81055e-05 2.28253 0.420104 2.28253 0.938232C2.28253 1.45636 2.70256 1.87638 3.22068 1.87638H10.7259V9.38161C10.7259 9.89974 11.1459 10.3198 11.6641 10.3198C12.1822 10.3198 12.6022 9.89974 12.6022 9.38161L12.6022 0.938232ZM0.664062 11.9382L1.32744 12.6016L12.3274 1.60161L11.6641 0.938232L11.0007 0.274857L0.000687975 11.2749L0.664062 11.9382Z"
+                    fill="#2F2F2F"
+                />
+                </svg>
+            </button>
+        </a>
+        {/* KNOW MORE */}
+        <a href={regLink} target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center gap-4 bg-[#D9FE78] text-[#2F2F2F] px-6 py-3 min-h-[52px] rounded-xl font-extrabold hover:scale-105 transition-transform">
+                KNOW MORE
+
+                <span className="w-8 h-8 rounded-lg border-2 border-[#032D29] flex items-center justify-center flex-shrink-0">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                        d="M3 12h18M15 5l7 7-7 7"
+                        stroke="#032D29"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        />
+                    </svg>
+                </span>
+            </button>
+        </a>
+        </div>
+      </div>
+
+      {/* RIGHT 2x2 GRID */}
+      <div className="w-[40%] grid grid-cols-2 grid-rows-2 gap-4">
+        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
+            <img
+            src="/disrupt00.svg"
+            alt=""
+            className="rotate-0 max-w-none w-[300%] h-auto translate-y-3"
+            />
+
+        </div>
+
+        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6">
+          <img
+            src="/disrupt01.svg"
+            alt=""
+            className="rotate-[15deg] max-w-none w-[300%] h-auto"
+            />
+        </div>
+
+        <div className="rounded-2xl bg-[#171C27] flex items-center justify-center p-6 rotate-[-6deg]">
+          <img
+            src="/disrupt10.svg"
+            alt=""
+            className="rotate-[12deg] max-w-none w-[200%] h-auto"
+            />
+        </div>
+
+        <div className="rounded-2xl bg-[#1B46F4] flex flex-col justify-between p-6 text-[#032D29] font-['Inter'] h-full">
+  
+            <div className="text-[40px] font-extrabold tracking-[0.2em] text-left leading-none">
+                JAN
+            </div>
+
+            <div className="flex justify-end items-start leading-none leading-none">
+                <span className="text-[52px] font-extrabold">23</span>
+                <span className="text-[18px] font-bold mt-1 ml-1">rd</span>
+            </div>
+
+            <div className="text-[18px] font-semibold tracking-[0.15em] text-center leading-none">
+                SATURDAY
+            </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  );
+};
+
 export default function EventsSection() {
     const [currentEvent, setCurrentEvent] = useState(0);
     const navigate = useNavigate();
@@ -140,7 +255,11 @@ export default function EventsSection() {
         <EventCardPlaceholder key="1" title="DISRUPT" color="bg-purple-600" regLink = "https://unstop.com/competitions/disrupt26-the-ultimate-startup-bootcamp-iit-guwahati-1545893"/>,
         <EventCardPlaceholder key="2" title="PMX" color="bg-blue-600" regLink = "https://unstop.com/competitions/pmx-2026-the-product-management-expedition-udgam-2026-iit-guwahati-1602663"/>,
         <EventCardPlaceholder key="3" title="SPARKLE" color="bg-pink-600" regLink = "https://unstop.com/competitions/sparkle-ascend-2026-udgam-2026-iit-guwahati-1603606?lb=h62eJ0a"/>,
-        <EventCardPlaceholder key="4" title="STARTUP-EXPO" color="bg-indigo-600" regLink = "https://unstop.com/competitions/startup-expo-udgam-2026-iit-guwahati-1581666"/>,
+        <DisruptCard
+            key="4"
+            regLink="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
+            passLink="#"
+        />,
         <InternfairCard
             key="5"
             regLink="https://road-to-internfair.notion.site/Road-To-Internfair-2026-2b846bf64908816d91b3ca935c70eab5"
