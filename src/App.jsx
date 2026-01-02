@@ -6,6 +6,7 @@ import Schedule from "../pages/Schedule"
 import Events from "../pages/Events";
 import OurTeam from "../pages/OurTeam";
 import Sponsors from "../pages/Sponsors";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
