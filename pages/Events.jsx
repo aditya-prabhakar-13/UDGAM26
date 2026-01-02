@@ -200,7 +200,7 @@ export default function Events() {
           <div id="di2">
             <p>Saturday</p>
             <p>
-              <span>23rd</span> Jan
+              <span>24th</span> Jan
             </p>
           </div>
           <div id="di3">
@@ -324,7 +324,7 @@ export default function Events() {
           </div>
           <div id="ex2">
             <p>Sat-Sun</p>
-            <p>23rd-24th</p>
+            <p>23rd-25th</p>
             <img src={expoDiamond} id="ex3" alt="" />
           </div>
           <div id="ex4">
@@ -384,7 +384,7 @@ export default function Events() {
           <div id="pmx2">
             <p>Saturday</p>
             <p>
-              <span>23rd</span> Jan
+              <span>24th</span> Jan
             </p>
           </div>
           <div id="pmx3">

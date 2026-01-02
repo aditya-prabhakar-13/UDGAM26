@@ -77,8 +77,8 @@ export default function SexpoCard({ regLink, passLink }){
                         </div>
             
                         <div className="flex justify-end items-start leading-none">
-                            <span className="text-[3.42vw] max-md:text-[4vw] font-extrabold">23</span>
-                            <span className="text-[1.18vw] max-md:text-[2.4vw] font-bold mt-[0.26vw] ml-[0.26vw]">rd</span>
+                            <span className="text-[3.42vw] max-md:text-[4vw] font-extrabold">25</span>
+                            <span className="text-[1.18vw] max-md:text-[2.4vw] font-bold mt-[0.26vw] ml-[0.26vw]">th</span>
                         </div>
             
                         <div className="text-[1.18vw] max-md:text-[2.5vw] font-semibold lg:tracking-[0.15em] text-center leading-none lg:uppercase">

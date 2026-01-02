@@ -138,7 +138,7 @@ export default function HeroSection() {
                     <div id="udgam-edition" 
                          className='text-[#FFF9F0] font-inter text-[2.5vw] max-md:text-[5vw] font-black leading-normal self-end pr-[3.28vw] relative z-999'
                     >
-                        EDITION XI
+                        EDITION XVIII
                     </div>
                 </div>
 
