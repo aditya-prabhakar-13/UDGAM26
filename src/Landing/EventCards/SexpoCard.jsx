@@ -82,7 +82,7 @@ export default function SexpoCard({ regLink, passLink }){
                         </div>
             
                         <div className="text-[1.18vw] max-md:text-[2.5vw] font-semibold lg:tracking-[0.15em] text-center leading-none lg:uppercase">
-                            Saturday
+                            Sunday
                         </div>
             
                     </div>
