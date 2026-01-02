@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/next"
 function App() {
   return (
     <>
+      <Analytics/>
       <div
         id="Navbar-container"
         className="flex flex-col justify-center items-center w-full h-[12vh] max-md:h-[7vh]"
