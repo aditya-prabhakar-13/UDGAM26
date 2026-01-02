@@ -278,9 +278,9 @@ export default function Events() {
             launchpad for students exploring future career paths.
           </h3>
           <div id="in2">
-            <p>Friday</p>
+            <p>Fri-Sun</p>
             <p>
-              <span>23rd</span> Jan
+              <span>23rd-25th</span> Jan
             </p>
             <img src={internPin} id="in1" alt="" />
           </div>
@@ -323,8 +323,8 @@ export default function Events() {
             </p>
           </div>
           <div id="ex2">
-            <p>Fri-Sun</p>
-            <p>23rd-25th</p>
+            <p>Sun</p>
+            <p>25th</p>
             <img src={expoDiamond} id="ex3" alt="" />
           </div>
           <div id="ex4">
