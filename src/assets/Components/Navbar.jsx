@@ -92,13 +92,13 @@ export default function Navbar() {
                     <button onClick={scrollToBottom} className="hover:text-[#FDD442] transition-colors">Contact Us</button>
 
                     {/* Mobile "Get Pass" (Moved inside menu) */}
-                    <a href="" className="lg:hidden w-full h-[3.5rem] mt-4 flex justify-center items-center rounded-[0.52288rem] bg-[#FDD442] text-[#141131]">
+                    <a href="https://www.meraevents.com/event/udgam-the-annual-entrepreneurship-summit-of-iit-guwahati?ucode=organizer" target="_blank" className="lg:hidden w-full h-[3.5rem] mt-4 flex justify-center items-center rounded-[0.52288rem] bg-[#FDD442] text-[#141131]">
                         Get Pass
                     </a>
                 </div>
 
                 {/* --- Desktop "Get Pass" Button (unchanged) --- */}
-                <a href="" id="passbutton-desktop" className="hidden lg:flex w-[8.5625rem] h-[2.94131rem] p-[0.78438rem] justify-center gap-x-[0.34rem] items-center flex-shrink-0 rounded-[0.52288rem] bg-[#FDD442]">
+                <a href="https://www.meraevents.com/event/udgam-the-annual-entrepreneurship-summit-of-iit-guwahati?ucode=organizer" id="passbutton-desktop" target="_blank" className="hidden lg:flex w-[8.5625rem] h-[2.94131rem] p-[0.78438rem] justify-center gap-x-[0.34rem] items-center flex-shrink-0 rounded-[0.52288rem] bg-[#FDD442]">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 49" fill="none" className="stroke-[#2B2844] h-[2.94131rem]">
                         <path d="M1.02271 1.02264L1.02271 47.0379" stroke="#2B2844" strokeWidth="2.04529" strokeLinecap="square" strokeDasharray="4.09 4.09" />
                     </svg>
