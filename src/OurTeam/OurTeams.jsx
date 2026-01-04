@@ -161,7 +161,7 @@ const OurTeam = () => {
                             <img src={lakshya} alt="profile" />
                             <div className="text-cut">
                     <div className='Name-cut'>LAKSHYA CHOUDHARY</div>
-                                <div className='POR-cut'>UDGAM DESIGN HEAD</div>
+                                <div className='POR-cut'>DESIGN HEAD</div>
                             </div>
                         </div>
                         <div className="overlay-cut">
@@ -259,7 +259,7 @@ const OurTeam = () => {
 
                     <div className='image-container9' style={{backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.13%, rgba(20, 17, 49, 0.64) 71.65%, #141131 99.88%), url(${utkarsh})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                     <div className='Name'>UTKARSH SHARMA</div>
-                        <div className='POR'>SPARKLE HEAD</div>
+                        <div className='POR'>FINANCE HEAD</div>
                         <div className="overlay">
                             <div className="icons">
                                 <a href="tel:+918169866597">
