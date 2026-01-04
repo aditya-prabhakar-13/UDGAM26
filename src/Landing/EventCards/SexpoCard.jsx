@@ -70,7 +70,7 @@ export default function SexpoCard({ regLink, passLink }){
                     </div>
 
 
-                    <div className="rounded-[1.05vw] max-md:rounded-[3.5vw] bg-[#1B46F4] flex flex-col justify-between max-md:justify-center p-[1.58vw] text-[#FEFBF1] font-['Inter'] h-full">
+                    <div className="rounded-[1.05vw] max-md:rounded-[3.5vw] bg-[#0A0024] flex flex-col justify-between max-md:justify-center p-[1.58vw] text-[#FEFBF1] font-['Inter'] h-full">
 
                         <div className="text-[2.63vw] max-md:text-[4vw] font-extrabold lg:tracking-[0.2em] text-left leading-none lg:uppercase">
                             Jan
