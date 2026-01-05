@@ -25,7 +25,7 @@ html,body{
 .box{
   position: relative;
   margin: 0 auto;
-  width: 70vw;
+  width: 75vw;
   border-radius: 7vw;
 }
 h1, h2, h3, p{
@@ -43,7 +43,7 @@ h1, h2, h3, p{
 #disrupt h1{
   color: #FEFBF1;
   font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 800;
   line-height: 77%;
@@ -52,7 +52,7 @@ h1, h2, h3, p{
 #disrupt h2{
   color: #D9FE78;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -62,11 +62,11 @@ h1, h2, h3, p{
 #disrupt h3{
   color: #FEFBF1;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 5vw 5vw 5vw 1vw;
+  padding: 3vw 3vw 3vw 1vw;
 }
 #di1{
   position: absolute;
@@ -82,11 +82,11 @@ h1, h2, h3, p{
   padding: 3vw 4vw;
   background-color: #FEFBF1;
   border-radius: 4vw;
-  border: 0.4vw solid #141131;
+  border: 0.3vw solid #141131;
   color: #070C17;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -106,7 +106,7 @@ h1, h2, h3, p{
   background-color: #D9FE78;
   color: #000;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -116,6 +116,7 @@ h1, h2, h3, p{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 #di32{
   background-color: #D9FE78;
@@ -129,15 +130,15 @@ h1, h2, h3, p{
   color: #000;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   height: 100%;
 }
 #di31 svg{
-  width: 9vw;
-  max-height: 9vw;
+  width: 4vw;
+  height: auto;
 }
 #di4{
   position: absolute;
@@ -160,7 +161,7 @@ h1, h2, h3, p{
 #intern h1{
   color: #033030;
   font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 800;
   line-height: 77%;
@@ -171,7 +172,7 @@ h1, h2, h3, p{
   background-color: #FBD03E;;
   color: #032D29;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -182,11 +183,11 @@ h1, h2, h3, p{
 #intern h3{
   color: #032D29;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 5vw 5vw 5vw 1vw;
+  padding: 2vw 5vw 1vw 1vw;
 }
 #in1{
   position: absolute;
@@ -203,17 +204,17 @@ h1, h2, h3, p{
   padding: 3vw 4vw;
   background: #032D29;
   border-radius: 2vw;
-  border: 0.4vw solid #141131;
+  border: 0.3vw solid #141131;
   color: #FCFFC8;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
   top: 0;
   left: 0;
-  transform: translate(20% , -70%);
+  transform: translate(20% , -60%);
 }
 #in3{
   position: absolute;
@@ -232,8 +233,8 @@ h1, h2, h3, p{
   font-weight: 600;
   line-height: normal;
   padding: 2vw 3vw;
-  border-radius: 3vw;
-  border: 0.4vw solid #FFF9F0;
+  border-radius: 2vw;
+  border: 0.3vw solid #FFF9F0;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -248,8 +249,8 @@ h1, h2, h3, p{
   font-weight: 600;
   line-height: normal;
   padding: 2vw 3vw;
-  border-radius: 3vw;
-  border: 0.4vw solid #FFF9F0;
+  border-radius: 2vw;
+  border: 0.3vw solid #FFF9F0;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -264,7 +265,7 @@ h1, h2, h3, p{
 #in4{
   bottom: 0;
   right: 1vw;
-  transform: translate(8%,-30%);
+  transform: translate(15%,-10%);
 }
 #in5{
   bottom: 0;
@@ -284,7 +285,7 @@ h1, h2, h3, p{
 #in8{
   color: #032D29;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -389,7 +390,7 @@ h1, h2, h3, p{
 /* pmx starts  */
 
 #pmx{
-  background-image: url(./assets/pmx\ grid.svg);
+  background-image: url(./assets/pmx\ grid.png);
   background-color: #4E16E6;
   padding: 4vw 4vw 4vw 6vw;
   background-size: cover;
@@ -411,7 +412,7 @@ h1, h2, h3, p{
   color: #070C17;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -419,7 +420,7 @@ h1, h2, h3, p{
   right: 0;
   transform: translate(-20% , -30%);
   border-radius: 4vw;
-  border: 0.4vw solid #141131;
+  border: 0.3vw solid #141131;
 }
 #pmx3{
   position: absolute;
@@ -433,33 +434,33 @@ h1, h2, h3, p{
 #pmx31{
   color: #EE3B3F;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 1vw 3vw;
+  padding: 2vw 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   border-radius: 3vw;
-  border: 0.4 solid #000;
+  border: 0.3vw solid #000;
   background: #FFF6EA;
 }
 #pmx31 svg{
-  max-width: 9vw;
+  max-width: 5vw;
   height: auto;
 }
 #pmxh{
   background-image: url(./assets/internbg.svg);
   background-repeat: repeat;
   padding: 2vw;
-  width: 85%;
+  /* width: 85%; */
 }
 #pmxh h1{
   color: #262261;
   font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 800;
   line-height: 77%; /* 5.775rem */
@@ -468,7 +469,7 @@ h1, h2, h3, p{
 #pmxh h2{
   color: #FD4248;
   font-family: TangoSans;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -477,7 +478,7 @@ h1, h2, h3, p{
 #pmxh h3{
   color: #000;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -507,7 +508,7 @@ h1, h2, h3, p{
 #spk h1{
   color: #7A1AF3;
   font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 800;
   line-height: 77%;
@@ -515,7 +516,7 @@ h1, h2, h3, p{
 #spk h2{
   color: #7A1AF3;
   font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 2.52025rem */
@@ -524,7 +525,7 @@ h1, h2, h3, p{
 #spk h3{
   color: #000;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -540,7 +541,7 @@ h1, h2, h3, p{
   color: #FFF9F0;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -548,7 +549,7 @@ h1, h2, h3, p{
   right: 0;
   transform: translate(-20% , -60%);
   border-radius: 4vw;
-  border: 0.4vw solid #141131;
+  border: 0.3vw solid #141131;
 }
 #spk3{
   position: absolute;
@@ -566,13 +567,13 @@ h1, h2, h3, p{
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 1vw 3vw;
+  padding: 2vw 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   border-radius: 3vw;
-  border: 0.4vw solid #000;
+  border: 0.3vw solid #000;
   background-image: url(./assets/spkbgbg.svg);
   background-size: 120%;
   background-position: center;
