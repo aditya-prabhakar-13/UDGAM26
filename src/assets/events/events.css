@@ -303,7 +303,7 @@ h1, h2, h3, p{
   position: relative;
   margin: auto;
   overflow: hidden;
-  min-height: 370px;
+  min-height: 30vw;
 }
 #exbbg{
   position: absolute;
@@ -317,21 +317,23 @@ h1, h2, h3, p{
   position: absolute;
   left: 0%;
   top: 0%;
+  min-width: 15vw;
 }
 #exwr{
   position: absolute;
-  scale: 0.7;
-  top: 0px;
-  left: 160px;
+  top: 1vw;
+  left: 16vw;
+  width: 25vw;
+  height: auto;
 }
 #exbg p{
   position: absolute;
-  bottom: 0px;
-  left: 200px;
+  top: 13vw;
+  left: 16vw;
   color: #0A0024;
   text-align: left;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: 135.189%;
@@ -340,14 +342,14 @@ h1, h2, h3, p{
 #ex2{
   position: absolute;
   display: inline-block;
-  padding: 30px 40px;
+  padding: 3vw 4vw;
   background: #0A0024;
-  border-radius: 1.5rem;
-  border: 4px solid #262261;
+  border-radius: 4vw;
+  border: 0.3vw solid #262261;
   color: #FCFFC8;
   text-align: center;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2.75rem;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -360,11 +362,13 @@ h1, h2, h3, p{
   top: 0;
   right: 0;
   transform: translate(50%, 0%);
+  width: 5vw;
+  height: auto;
 }
 #ex4{
   position: absolute;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   bottom: 0;
   transform: translate(-50%,40%);
   left: 70%;
@@ -374,19 +378,22 @@ h1, h2, h3, p{
   background-color: #0A0024;
   color: #EF9539;
   font-family: Inter;
-  font-size: 3.125rem;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 15px 25px;
-  border-radius: 1.5rem;
-  border: 1px solid #262261;
+  padding: 2vw 3vw;
+  border-radius: 3vw;
+  border: 0.3vw solid #262261;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-
+#ex41 svg{
+  width: 5vw;
+  height: auto;
+}
 /* pmx starts  */
 
 #pmx{

@@ -163,7 +163,7 @@ export default function Events() {
             <img src={sexpoBg} id="exbbg" alt="" />
 
             <picture>
-              <source media="(max-width: 1000px)" srcSet={exporange} />
+              <source media="(max-width: 1150px)" srcSet={exporange} />
               <img src={sexporange} id="exor" alt="Description" />
             </picture>
             <img src={expoWrite} id="exwr" alt="" />
@@ -177,8 +177,8 @@ export default function Events() {
             </p>
           </div>
           <div id="ex2">
-            <p>Sun</p>
-            <p>25th</p>
+            <p>Sunday</p>
+            <p>25th Jan</p>
             <img src={expoDiamond} id="ex3" alt="" />
           </div>
           <div id="ex4">
