@@ -1,14 +1,5 @@
 import React, { useState } from "react";
 
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-};
-
-
-
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -89,7 +80,7 @@ export default function Navbar() {
                     <a href="#" className="hover:text-[#FDD442] transition-colors">Schedule</a>
                     <a href="/sponsors" className="hover:text-[#FDD442] transition-colors">Sponsors</a>
                     <a href="/team" className="hover:text-[#FDD442] transition-colors">Our Team</a>
-                    <button onClick={scrollToBottom} className="hover:text-[#FDD442] transition-colors">Contact Us</button>
+                    <a href="/contact" className="hover:text-[#FDD442] transition-colors">Contact Us</a>
 
                     {/* Mobile "Get Pass" (Moved inside menu) */}
                     <a href="https://www.meraevents.com/event/udgam-the-annual-entrepreneurship-summit-of-iit-guwahati?ucode=organizer" target="_blank" className="lg:hidden w-full h-[3.5rem] mt-4 flex justify-center items-center rounded-[0.52288rem] bg-[#FDD442] text-[#141131]">

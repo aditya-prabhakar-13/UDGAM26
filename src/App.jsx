@@ -6,7 +6,7 @@ import Schedule from "../pages/Schedule"
 import Events from "../pages/Events";
 import OurTeam from "../pages/OurTeam";
 import Sponsors from "../pages/Sponsors";
-
+import ContactUs from "../pages/ContactUs";
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/team" element={<OurTeam />} />
-        
+        <Route path="/contact" element={<ContactUs />} /> 
       </Routes>
       <Footer />
     </>
