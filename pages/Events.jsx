@@ -17,12 +17,28 @@ import pmx1 from "../src/assets/events/assets/pmx1.svg";
 import pmx2 from "../src/assets/events/assets/pmx2.png";
 import spkImg1 from "../src/assets/events/assets/spkimg1.svg";
 import spkImg2 from "../src/assets/events/assets/spkimg2.svg";
+import encw from "/encode_write.svg";
+import enca from "/encode_arrow.svg";
+import encm from "/encode_mouse.svg";
+import dfl from "/dframe_line.svg";
+import dfimg from "/dframe_img.svg";
+import neca from "/nec_arrow.svg";
+import lswb1 from "/lsw_book.svg";
+import lswb2 from "/lsw_book2.svg";
+import lswl from "/lsw_line.svg";
+import lswm from "/lsw_mic.svg";
+import lsww from "/lsw_write.svg";
+import ap1 from "/ap_img1.svg";
+import ap2 from "/ap_img2.svg";
+import apl from "/ap_line.svg";
+import appu from "/ap_p.svg";
+import apw from "/ap_write.svg";
+import apw2 from "/ap_write2.svg";
+import apye from "/ap_y.svg";
 
 export default function Events() {
   return (
     <div id="Events">
-     
-
       <section id="slides">
         {/* disrupt starts  */}
 
@@ -278,6 +294,279 @@ export default function Events() {
           <img src={pmx2} id="pmx4" alt="" />
         </section>
 
+        {/* encode starts  */}
+
+        <section className="box" id="enc">
+          <img src={encw} id="encimg" alt="" />
+          <h1>
+            Are you a curious mind eager to harness the latest advancements in
+            AI to transform the world? Or do you have the vision to invent
+            solutions for the future? EnCode is here with an exciting
+            opportunity for you! UDGAM 2026, IIT Guwahati proudly presents the
+            fifth edition of its flagship AI Hackathon, EnCode, designed to
+            inspire, challenge, and empower innovators.
+          </h1>
+          <div id="enc2">
+            <p>Saturday</p>
+            <p>
+              <span>24th</span> Jan
+            </p>
+          </div>
+          <img src={enca} id="enc3" alt="" />
+          <img src={encm} id="enc4" alt="" />
+          <div id="enc5">
+            <a
+              href="https://unstop.com/hackathons/encode-2026-code-to-innovate-udgam-2026-iit-guwahati-1609664"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div id="enc31">
+                Register NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7029 43.3459L42.6895 20.3594"
+                    stroke="#161616"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M43.346 38.0917V19.7024H24.9567"
+                    stroke="#161616"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* dframe starts  */}
+
+        <section className="box" id="df">
+          <h1>D-FRAME</h1>
+          <img src={dfl} id="df1" alt="" />
+          <h2>
+            UDGAM, the Annual E-summit of IIT Guwahati in partnership with White
+            Space, the Design club presents DFrame: UI/UX D-frame is the perfect
+            blend of creativity and business relevance, designed to enhance the
+            innovative potential of designers. It challenges participants to
+            flex their creative skills, crafting technical solutions while
+            maintaining a strong human-centric approach.
+          </h2>
+          <img src={dfimg} id="df2" alt="" />
+          <div id="df3">
+            <p>Saturday</p>
+            <p>
+              <span>24th</span> Jan
+            </p>
+          </div>
+          <div id="df5">
+            <a
+              href="https://unstop.com/competitions/dframe-2026-uiux-udgam-2026-iit-guwahati-1613019"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div id="df31">
+                Register NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7029 43.3459L42.6895 20.3594"
+                    stroke="#FFF9F0"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M43.346 38.0917V19.7024H24.9567"
+                    stroke="#FFF9F0"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* nec starts  */}
+
+        <section className="box" id="nec">
+          <div id="nec1">
+            <img src={neca} alt="" />
+            <div id="nec2">
+              <h1>NEC</h1>
+              <h2>Northeastern Entrepreneurship Conference</h2>
+              <h3>
+                E-Cell IIT Guwahati presents the Northeast Entrepreneurship
+                Conference, a platform bringing together entrepreneurs, and
+                innovators from across the region. The conference will feature
+                insightful talks, panel discussions, and networking
+                opportunities focused on innovation, startups, and regional
+                growth.
+              </h3>
+            </div>
+          </div>
+          <div id="nec3">
+            <p>Saturday</p>
+            <p>
+              <span>24th</span> Jan
+            </p>
+          </div>
+          <div id="nec5">
+            <a
+              href="https://unstop.com/competitions/dframe-2026-uiux-udgam-2026-iit-guwahati-1613019"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div id="nec31">
+                Register NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7029 43.3459L42.6895 20.3594"
+                    stroke="#791323"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M43.346 38.0917V19.7024H24.9567"
+                    stroke="#791323"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* LS & W starts  */}
+
+        <section className="box" id="lsw">
+          <img src={lsww} id="lsw1" alt="" />
+          <img src={lswl} id="lsw2" alt="" />
+          <h3>UDGAM ’26 brings you a CV Building Workshop designed for both tech & non-tech internships, packed with practical insights to help your resume stand out where it matters.Learn directly from industry experts and discover what recruiters actually look for.
+          Because the right story on paper can open the right doors.
+          </h3>
+          <img src={lswb1} id="lsw3" alt="" />
+          <img src={lswb2} id="lsw4" alt="" />
+          <img src={lswm} id="lsw5" alt="" />
+          <div id="lsw6">
+            <a
+              href="https://unstop.com/college-fests/udgam-2026-indian-institute-of-technology-iit-guwahati-407736"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div id="lsw61">
+                Register NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7029 43.3459L42.6895 20.3594"
+                    stroke="#262261"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M43.346 38.0917V19.7024H24.9567"
+                    stroke="#262261"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div id="lsw7">
+            <p>Saturday</p>
+            <p>
+              <span>24th</span> Jan
+            </p>
+          </div>
+        </section>
+
+        {/* antha prerna starts  */}
+        <section className="box" id="ap">
+          <div id="apcon">
+            <img src={apye} id="ap1" alt="" />
+            <img src={appu} id="ap2" alt="" />
+            <img src={apl} id="ap3" alt="" />
+            <img src={apw} id="ap4" alt="" />
+            <img src={apw2} id="ap5" alt="" />
+          </div>
+          <h3>How sharp is your business savvy? Put your knowledge to the test with our exciting quiz and see if you're a true business whiz or if it’s time for a little refresher!The Entrepreneurship Cell of IIT Guwahati is thrilled to announce a Business Quiz for all enthusiasts and business buffs as part of its annual entrepreneurship summit, UDGAM '26.</h3>
+          <img src={ap1} id="ap6" alt="" />
+          <img src={ap2} id="ap7" alt="" />
+          <div id="ap8">
+            <a
+              href="https://unstop.com/college-fests/udgam-2026-indian-institute-of-technology-iit-guwahati-407736"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div id="ap61">
+                Register NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                >
+                  <path
+                    d="M19.7029 43.3459L42.6895 20.3594"
+                    stroke="#151131"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M43.346 38.0917V19.7024H24.9567"
+                    stroke="#151131"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+
         {/*Sparkles starts*/}
 
         <section className="box" id="spk">
@@ -286,12 +575,12 @@ export default function Events() {
             <h2>The Student Startup Bootcamp</h2>
             <h3>
               Sparkle is UDGAM’s dedicated platform for school students (Classes
-              6–12) to explore entrepreneurship, creativity, and problem-solving.
-              It encourages young innovators to think boldly, develop ideas, and
-              present solutions through guided events, activities, and
-              competitions. Designed as a launchpad for budding leaders, Sparkle
-              helps students transform their imagination into real, impactful
-              concepts.
+              6–12) to explore entrepreneurship, creativity, and
+              problem-solving. It encourages young innovators to think boldly,
+              develop ideas, and present solutions through guided events,
+              activities, and competitions. Designed as a launchpad for budding
+              leaders, Sparkle helps students transform their imagination into
+              real, impactful concepts.
             </h3>
           </div>
           <div id="spk2">
