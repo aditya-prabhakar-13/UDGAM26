@@ -1,0 +1,23 @@
+<svg width="1085" height="503" viewBox="0 0 1085 503" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1" filter="url(#filter0_g_1830_5240)">
+<circle cx="882.835" cy="264.721" r="159.313" stroke="#FFE7E3" stroke-width="0.905189"/>
+<circle cx="347.868" cy="-108.217" r="159.313" stroke="#FFE7E3" stroke-width="0.905189"/>
+<circle cx="883.741" cy="264.721" r="69.6996" stroke="#FFE7E3" stroke-width="0.905189"/>
+<path d="M882.836 -108.218C1085.28 -108.217 1249.44 67.6388 1249.44 284.635C1249.44 501.631 1085.28 677.487 882.836 677.487C680.396 677.487 516.233 501.631 516.233 284.635C516.233 67.6386 680.396 -108.218 882.836 -108.218Z" stroke="#FFE7E3" stroke-width="0.905189"/>
+<path d="M347.869 -480.251C550.309 -480.251 714.471 -304.596 714.471 -87.8506C714.47 128.895 550.309 304.549 347.869 304.549C145.429 304.549 -18.7332 128.895 -18.7334 -87.8506C-18.7334 -304.596 145.429 -480.251 347.869 -480.251Z" stroke="#FFE7E3" stroke-width="0.905189"/>
+<path d="M591.817 375.153C910.989 375.153 1169.78 652.124 1169.78 993.851C1169.78 1335.58 910.989 1612.55 591.817 1612.55C272.645 1612.55 13.853 1335.58 13.853 993.851C13.853 652.124 272.645 375.153 591.817 375.153Z" stroke="#FFE7E3" stroke-width="0.905189"/>
+<path d="M883.288 -333.61C1202.46 -333.61 1461.25 -56.6394 1461.25 285.087C1461.25 626.813 1202.46 903.784 883.288 903.784C564.116 903.784 305.324 626.813 305.324 285.087C305.324 -56.6394 564.116 -333.61 883.288 -333.61Z" stroke="#FFE7E3" stroke-width="0.905189"/>
+<path d="M347.416 -706.548C666.588 -706.548 925.379 -429.577 925.379 -87.8506C925.379 253.876 666.588 530.847 347.416 530.847C28.2442 530.847 -230.548 253.876 -230.548 -87.8506C-230.548 -429.577 28.2442 -706.548 347.416 -706.548Z" stroke="#FFE7E3" stroke-width="0.905189"/>
+</g>
+<defs>
+<filter id="filter0_g_1830_5240" x="-232.81" y="-708.81" width="1696.32" height="2323.62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.31564038991928101 0.31564038991928101" numOctaves="3" seed="1974" />
+<feDisplacementMap in="shape" scale="3.6207568645477295" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_1830_5240">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
