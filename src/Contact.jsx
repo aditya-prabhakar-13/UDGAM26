@@ -77,7 +77,7 @@ export default function ContactMain() {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      
     }
 
     body {
@@ -85,6 +85,7 @@ export default function ContactMain() {
       background: radial-gradient(circle at top, #1a1840, #0b0a23);
       color: #fff;
       overflow-x: hidden;
+      
     }
 
     /* star dots */
@@ -110,6 +111,7 @@ export default function ContactMain() {
       grid-template-columns: 1.1fr 1fr;
       gap: 3rem;
       align-items: start;
+      font-family: 'Poppins', sans-serif;
     }
 
     /* LEFT */
