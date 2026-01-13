@@ -3,11 +3,11 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        // You can now use className="font-tango"
         tango: ['TangoSans', 'sans-serif'],
       },
     },
