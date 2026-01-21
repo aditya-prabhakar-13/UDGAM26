@@ -466,7 +466,7 @@ const OurTeam = () => {
                             <span>Dhruv jain</span>
                             <span>Tanush Dhiman</span>
                             <span>Lokesh Pawar</span>
-                            <span>Tannya Goel</span>
+                            <span>Tanya Goel</span>
                         </div>
                         <img src={if1} className='if-image1' />
                         <img src={if2} className='if-image2' />
@@ -478,13 +478,14 @@ const OurTeam = () => {
                 <div className="column2">
                     <div className="design" style={{backgroundImage: `url(${designpng})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                         <div className="design-text">DESIGN</div>
-                        <div className="design-managers">
+                        <div className="design-managers" id="dejain">
                             <span>Dev</span>
                             <span>Nila</span>
                             <span>Shradha</span>
                             <span>Ayushman</span>
                             <span>Rupiga</span>
                             <span>Ronik</span>
+                            <span>Aditya Ranjan</span>
                         </div>
                         <img src={purple} className='purple-left' />
                         <img src={purple} className='purple-top' />
@@ -516,7 +517,7 @@ const OurTeam = () => {
                     </div>
                     <div className="ina" style={{backgroundImage: `url(${inapng})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                         <div className="ina-text">INA</div>
-                        <div className="design-managers">
+                        <div className="design-managers" id="inaman">
                             <span>Aditya Kakade</span>
                             <span>Aditya Prabhakar</span>
                             <span>Aditya Chauhan</span>
@@ -525,7 +526,8 @@ const OurTeam = () => {
                             <span>Deependra Singh</span>
                             <span>Shruti Lonbale</span>
                             <span>Palak Singhal</span>
-                            <span>Mridu</span>
+                            <span>Mridu Rohi</span>
+                            <span>Akanksha</span>
                         </div>
                     </div>
                     {/* <div className="website" style={{backgroundImage: `url(${webpng})`, backgroundSize: 'cover', noRepeat: 'no-repeat', backgroundPosition: 'center'}}>
@@ -588,9 +590,6 @@ const OurTeam = () => {
                             <span>Aditya Ranjan</span>
                             <span>Navneet </span>
                             <span>Archit</span>
-                            <span>Huzefa</span>
-                            <span>Shreshtha</span>
-                            <span>Anushka Patil</span>
                             <span>Amogh</span>
                         </div>
                         <img src={purple} className='purple-rtop' />
