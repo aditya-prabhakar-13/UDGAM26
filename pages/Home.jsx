@@ -61,10 +61,8 @@ export default function Home() {
       <HeroSection />
       <InfoSection />
       <EventsSection />
-      <MerchandiseSection />
       <SpeakersSection />
       <GallerySection />
-      <SponsorsSection />
       <TestimonialsSection />
     </div>
   );

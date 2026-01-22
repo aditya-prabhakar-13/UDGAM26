@@ -53,7 +53,7 @@ export default function Sponsors() {
                         <div id="titlecol2-card1" style={{backgroundImage: `url(${tic})`}} className="w-[21.633vw] h-[15.058vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] bg-cover bg-center bg-no-repeat">
                             {/* <img src={aisquare} alt="ai-square" className="object-cover object-center" /> */}
                         </div>
-                        <div id="titlecol2-card1-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center">
+                        <div id="titlecol2-card1-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center font-['Inter'] font-black text-[1.65vw]">
                             Associate Title Sponsor
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function Sponsors() {
                         <div id="titlecol2-card2" style={{backgroundImage: `url(${sharechat})`}} className="w-[21.633vw] h-[15.058vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] bg-cover bg-center bg-no-repeat">
 
                         </div>
-                        <div id="titlecol2-card2-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center">
+                        <div id="titlecol2-card2-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center font-['Inter'] font-black text-[1.65vw]">
                             PMx Title Sponsor
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function Sponsors() {
                         <div id="titlecol2-card3" style={{backgroundImage: `url(${nrl})`}} className="w-[21.633vw] h-[15.058vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] bg-cover bg-center bg-no-repeat">
 
                         </div>
-                        <div id="titlecol2-card3-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center">
+                        <div id="titlecol2-card3-name" className="w-[21.633vw] h-[4.866vw] shrink-0 rounded-[1.578vw] border-[0.053vw] border-[#000] bg-[#F6F6F6] flex flex-col justify-center items-center font-['Inter'] font-black text-[1.65vw]">
                             Associate Title Sponsor
                         </div>
                     </div>
