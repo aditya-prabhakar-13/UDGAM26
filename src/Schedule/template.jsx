@@ -19,9 +19,9 @@ export default function ScheduleTemplate() {
 
       <div className="schedule-wrap">
 
-        <div className="day-card open">
+        <div className="day-card">
           <div className="day-header">
-            <span className="day-title">DAY 1 – 23 January, 2026</span>
+            <span className="day-title">DAY 0 – 23 January, 2026</span>
 
             <span className="accordion-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 36 20" fill="none">
@@ -34,9 +34,6 @@ export default function ScheduleTemplate() {
             <div className="schedule-body">
               <div className="left-column">
                 <div className="left-header">TIME</div>
-                <div className="venue">Hall A</div>
-                <div className="venue">Hall B</div>
-                <div className="venue">Hall C</div>
                 <div className="venue">Auditorium</div>
               </div>
               <div className="timeline">
@@ -49,9 +46,9 @@ export default function ScheduleTemplate() {
           </div>
         </div>
 
-        <div className="day-card">
+        <div className="day-card open">
           <div className="day-header">
-            <span className="day-title">DAY 2 – 24 January, 2026</span>
+            <span className="day-title">DAY 1 – 24 January, 2026</span>
             <span className="accordion-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 36 20" fill="none">
                 <path d="M35.5205 17.1536L19.1577 0.488754C19.0057 0.333811 18.8252 0.210892 18.6266 0.127028C18.428 0.0431633 18.215 0 18 0C17.785 0 17.572 0.0431633 17.3734 0.127028C17.1748 0.210892 16.9943 0.333811 16.8423 0.488754L0.479522 17.1536C0.172489 17.4663 0 17.8904 0 18.3326C0 18.7748 0.172489 19.1989 0.479522 19.5116C0.786555 19.8243 1.20298 20 1.63719 20C2.0714 20 2.48783 19.8243 2.79486 19.5116L18 4.02378L33.2051 19.5116C33.5122 19.8243 33.9286 20 34.3628 20C34.797 20 35.2134 19.8243 35.5205 19.5116C35.8275 19.1989 36 18.7748 36 18.3326C36 17.8904 35.8275 17.4663 35.5205 17.1536Z" fill="#141131"/>
@@ -63,9 +60,15 @@ export default function ScheduleTemplate() {
             <div className="schedule-body">
               <div className="left-column">
                 <div className="left-header">TIME</div>
-                <div className="venue">Hall A</div>
-                <div className="venue">Hall B</div>
-                <div className="venue">Hall C</div>
+                <div className="venue">Conference Hall 1</div>
+                <div className="venue">Conference Hall 2</div>
+                <div className="venue">Conference Hall 3</div>
+                <div className="venue">Core 5 - 5G1</div>
+                <div className="venue">Core 5 - 5G2</div>
+                <div className="venue">Mini Auditorium</div>
+                <div className="venue">Lecture Hall 2</div>
+                <div className="venue">Conference Room</div>
+                <div className="venue">IITG Circle</div>
                 <div className="venue">Auditorium</div>
               </div>
               <div className="timeline">
@@ -80,7 +83,7 @@ export default function ScheduleTemplate() {
 
         <div className="day-card">
           <div className="day-header">
-            <span className="day-title">DAY 3 – 25 January, 2026</span>
+            <span className="day-title">DAY 2 – 25 January, 2026</span>
             <span className="accordion-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 36 20" fill="none">
                 <path d="M35.5205 17.1536L19.1577 0.488754C19.0057 0.333811 18.8252 0.210892 18.6266 0.127028C18.428 0.0431633 18.215 0 18 0C17.785 0 17.572 0.0431633 17.3734 0.127028C17.1748 0.210892 16.9943 0.333811 16.8423 0.488754L0.479522 17.1536C0.172489 17.4663 0 17.8904 0 18.3326C0 18.7748 0.172489 19.1989 0.479522 19.5116C0.786555 19.8243 1.20298 20 1.63719 20C2.0714 20 2.48783 19.8243 2.79486 19.5116L18 4.02378L33.2051 19.5116C33.5122 19.8243 33.9286 20 34.3628 20C34.797 20 35.2134 19.8243 35.5205 19.5116C35.8275 19.1989 36 18.7748 36 18.3326C36 17.8904 35.8275 17.4663 35.5205 17.1536Z" fill="#141131"/>
@@ -92,10 +95,22 @@ export default function ScheduleTemplate() {
             <div className="schedule-body">
               <div className="left-column">
                 <div className="left-header">TIME</div>
-                <div className="venue">Hall A</div>
-                <div className="venue">Hall B</div>
-                <div className="venue">Hall C</div>
+                <div className="venue">Conference Hall 1</div>
+                <div className="venue">Conference Hall 2</div>
+                <div className="venue">Core 5 - 5G1</div>
+                <div className="venue">Core 5 - 5G2</div>
+                <div className="venue">Core 5 - 5G3</div>
+                <div className="venue">Lecture Hall 2</div>
+                <div className="venue">Lecture Hall 3</div>
+                <div className="venue">Lakeside Arena</div>
+                <div className="venue">Conference Center Hall</div>
+                <div className="venue">Conference Room</div>
                 <div className="venue">Auditorium</div>
+                <div className="venue">Mini Auditorium</div>
+                <div className="venue">Library Basement</div>
+                <div className="venue">IITG Circle</div>
+                <div className="venue">IITG Circle</div>
+                
               </div>
               <div className="timeline">
                 <div className="timeline-scroll">
@@ -107,11 +122,11 @@ export default function ScheduleTemplate() {
           </div>
         </div>
       </div>
-
+      {/*
       <button className="map-fab" id="openMap" aria-label="Open map">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M576 112C576 103.7 571.7 96 564.7 91.6C557.7 87.2 548.8 86.8 541.4 90.5L416.5 152.1L244 93.4C230.3 88.7 215.3 89.6 202.1 95.7L77.8 154.3C69.4 158.2 64 166.7 64 176L64 528C64 536.2 68.2 543.9 75.1 548.3C82 552.7 90.7 553.2 98.2 549.7L225.5 489.8L396.2 546.7C409.9 551.3 424.7 550.4 437.8 544.2L562.2 485.7C570.6 481.7 576 473.3 576 464L576 112zM208 146.1L208 445.1L112 490.3L112 191.3L208 146.1zM256 449.4L256 148.3L384 191.8L384 492.1L256 449.4zM432 198L528 150.6L528 448.8L432 494L432 198z"/></svg>
       </button>
-
+    */}
       <div className="map-overlay" id="mapOverlay">
         <div className="map-panel">
           <div className="map-area">

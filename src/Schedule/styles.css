@@ -70,10 +70,11 @@ h1{
 
 .schedule-body{
   display:flex;
-  height:300px;
+  height:auto;
   background:linear-gradient(180deg,#2b2746,var(--timeline-bg));
   border-radius:14px;
   overflow:hidden;
+  padding: 12px 0;
 }
 
 .left-column{ width:230px; background:#2a2544; border-right:1px solid var(--grid); flex-shrink:0; }
@@ -92,7 +93,7 @@ h1{
 .grid{ position:relative; height:100%; }
 .vline{ position:absolute; top:0; bottom:0; width:1px; background:var(--grid); }
 .time{ position:absolute; top:8px; transform:translateX(-50%); font-size:13px; opacity:.75; font-weight:600; }
-.row{ position:absolute; left:0; right:0; height:56px; border-top:1px solid var(--grid); }
+.row{ position:absolute; left:0; right:0; height:56px; border-top:1px solid rgba(255,255,255,0.12); border-bottom:1px solid var(--grid); }
 .event{ position:absolute; height:48px; border-radius:14px; display:flex; flex-direction:column; justify-content:center; align-items:center; box-shadow:0 8px 18px rgba(0,0,0,.4); color:#000; }
 .event-title{ font-family:Inter,sans-serif; font-size:15px; font-weight:700; }
 .event small{ font-size:11px; opacity:.65; }

@@ -77,7 +77,7 @@ export default function Navbar() {
                 `}>
                     <a href="/" className="hover:text-[#FDD442] transition-colors">Home</a>
                     <a href="/events" className="hover:text-[#FDD442] transition-colors">Events</a>
-                    <a href="#" className="hover:text-[#FDD442] transition-colors">Schedule</a>
+                    <a href="/schedule" className="hover:text-[#FDD442] transition-colors">Schedule</a>
                     <a href="/sponsors" className="hover:text-[#FDD442] transition-colors">Sponsors</a>
                     <a href="/team" className="hover:text-[#FDD442] transition-colors">Our Team</a>
                     <a href="/contact" className="hover:text-[#FDD442] transition-colors">Contact Us</a>

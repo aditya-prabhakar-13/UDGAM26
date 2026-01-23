@@ -1,19 +1,64 @@
 // behavior.js - exposes initSchedule() and cleanupSchedule()
-const START_HOUR = 8, END_HOUR = 20, PX_PER_HOUR = 200, ROW_HEIGHT = 56;
+const START_HOUR = 8, END_HOUR = 23, PX_PER_HOUR = 200, ROW_HEIGHT = 56;
 
 const dayEvents = {
   grid1: [
-    { start: 9, end: 10.5, row: 0, color: 'teal', title: 'Event Name', loc: 'Add to Calendar' },
-    { start: 10.5, end: 12, row: 0, color: 'gold', title: 'Event Name', loc: 'Add to Calendar' },
-    { start: 9.5, end: 10.5, row: 1, color: 'teal', title: 'Panel: Tech', loc: 'Add to Calendar' },
-    { start: 10, end: 11, row: 2, color: 'gold', title: 'Workshop', loc: 'Add to Calendar' }
+    { start: 18, end: 23, row: 0, color: 'teal', title: 'Inauguration and Comedy Night', loc: 'Add to Calendar' },
+
   ],
   grid2: [
-    { start: 9, end: 11, row: 0, color: 'gold', title: 'Hackathon', loc: 'Main Hall' },
-    { start: 11, end: 12.5, row: 1, color: 'teal', title: 'AI Talk', loc: 'Hall C' }
+    { start: 9, end: 17, row: 0, color: 'gold', title: 'PMx Finals', loc: 'Add to Calendar' },
+    { start: 17, end: 18, row: 0, color: 'teal', title: 'Ground Zero Workshop', loc: 'Add to Calendar' },
+    { start: 18, end: 19, row: 0, color: 'gold', title: 'PMx Results', loc: 'Add to Calendar' },
+
+    { start: 9, end: 14, row: 1, color: 'teal', title: 'Disrupt Finals', loc: 'Add to Calendar' },
+    { start: 15, end: 19, row: 1, color: 'teal', title: 'Disrupt Finals', loc: 'Add to Calendar' },
+
+    { start: 9, end: 16, row: 2, color: 'gold', title: 'Northeast Launch Pad', loc: 'Add to Calendar' },
+
+    { start: 9, end: 17, row: 3, color: 'teal', title: 'Encode Finals', loc: 'Add to Calendar' },
+    { start: 9, end: 14, row: 4, color: 'gold', title: 'Sparkle', loc: 'Add to Calendar' },
+
+    { start: 12, end: 14, row: 5, color: 'teal', title: 'Grids and Gaps', loc: 'Add to Calendar' },
+    { start: 14, end: 15, row: 5, color: 'gold', title: 'Microsoft CTO', loc: 'Add to Calendar' },
+    { start: 15, end: 16, row: 5, color: 'teal', title: 'Kiran (Online)', loc: 'Add to Calendar' },
+    { start: 16, end: 17, row: 5, color: 'gold', title: 'Kamlesh', loc: 'Add to Calendar' },
+
+    { start: 11, end: 19, row: 6, color: 'gold', title: "Traitor's Gambit (Fun event)", loc: 'Add to Calendar' },
+
+    { start: 13, end: 15, row: 7, color: 'teal', title: "NEC Speaker Session", loc: 'Add to Calendar' },
+
+    { start: 11, end: 18, row: 8, color: 'gold', title: "Hands & Hoax (Fun event) & Monopoly", loc: 'Add to Calendar' },
+
+    { start: 20, end: 23, row: 9, color: 'teal', title: "Spotlight Night", loc: 'Add to Calendar' },
   ],
   grid3: [
-    { start: 10, end: 12, row: 0, color: 'teal', title: 'Closing Event', loc: 'Auditorium' }
+    { start: 18, end: 21, row: 0, color: 'teal', title: "Founder's Lab and Closing Ceremony", loc: 'Add to Calendar' },
+    { start: 14, end: 19, row: 1, color: 'gold', title: "IPL Auction Finals", loc: 'Add to Calendar' },
+
+    { start: 10, end: 17, row: 2, color: 'teal', title: "NE SustainX ML", loc: 'Add to Calendar' },
+    { start: 10, end: 17, row: 3, color: 'gold', title: "NE SustainX Electronics", loc: 'Add to Calendar' },
+
+    { start: 11, end: 19, row: 4, color: 'teal', title: "ERC", loc: 'Add to Calendar' },  
+    { start: 10, end: 15, row: 5, color: 'gold', title: "Traitor's Gambit (Fun event)", loc: 'Add to Calendar' },
+    { start: 15, end: 18, row: 6, color: 'teal', title: "Antah Prerna", loc: 'Add to Calendar' },  
+
+    { start: 8, end: 18, row: 7, color: 'gold', title: "Startup EXPO", loc: 'Add to Calendar' },
+
+    { start: 12, end: 16, row: 8, color: 'teal', title: "Networking Lunch", loc: 'Add to Calendar' },
+
+    { start: 14, end: 16, row: 9, color: 'gold', title: "NEC", loc: 'Add to Calendar' },
+    { start: 16, end: 20, row: 9, color: 'teal', title: "Investor - Incubator Summit", loc: 'Add to Calendar' },
+    
+    { start: 20, end: 23, row: 10, color: 'gold', title: "DJ Night", loc: 'Add to Calendar' },
+
+    { start: 15, end: 17, row: 11, color: 'teal', title: "Matiks", loc: 'Add to Calendar' },
+
+    { start: 11, end: 18, row: 12, color: 'gold', title: "Escape Room", loc: 'Add to Calendar' },
+    
+    { start: 17, end: 20, row: 13, color: 'teal', title: "Chai Pe Charcha	", loc: 'Add to Calendar' },
+
+    { start: 11, end: 18, row: 14, color: 'gold', title: "Hands & Hoax(Fun event) & Monopoly", loc: 'Add to Calendar' },
   ]
 };
 
@@ -35,12 +80,21 @@ function buildGrid(grid, events) {
     );
   }
 
-  for (let r = 0; r < 5; r++) {
-    const row = document.createElement('div');
-    row.className = 'row';
-    row.style.top = (ROW_HEIGHT * r + 56) + 'px';
-    grid.appendChild(row);
-  }
+  const maxRow = events.length
+  ? Math.max(...events.map(ev => ev.row))
+  : 0;
+
+const totalRows = maxRow + 1;
+
+// 🔑 set grid height properly
+grid.style.height = (totalRows * ROW_HEIGHT + 62) + 'px';
+
+for (let r = 0; r < totalRows; r++) {
+  const row = document.createElement('div');
+  row.className = 'row';
+  row.style.top = (ROW_HEIGHT * r + 56) + 'px';
+  grid.appendChild(row);
+}
 
   events.forEach(ev => {
     const e = document.createElement('div');
