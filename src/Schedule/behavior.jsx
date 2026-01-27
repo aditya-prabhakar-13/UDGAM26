@@ -128,7 +128,7 @@ for (let r = 0; r < totalRows; r++) {
       const title = encodeURIComponent(ev.title || 'Event');
       const details = encodeURIComponent(ev.desc || '');
       // map row index to actual venue names used by the map data
-      const venueNames = ['Lecture Halls', 'Conference Hall', 'Hall C', 'Auditorium'];
+      const venueNames = ['Lecture Halls', 'Conference Hall', 'Hall C', 'Auditorium', 'Core 5','IITG Circle'];
       const locName = venueNames[ev.row] || ev.location || '';
       const location = encodeURIComponent(locName);
       const gcalUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${'IITG - ' + location}&sf=true&output=xml&ctz=Asia/Kolkata`;
@@ -176,8 +176,10 @@ function setupMap() {
     const locations = {
       Lecture_Halls: { name: 'Lecture Halls', coords: [26.188874, 91.691424] },
       Conference_Hall: { name: 'Conference Hall', coords: [26.191183, 91.692444] },
-      hallC: { name: 'Hall C', coords: [26.190059, 91.693818] },
-      auditorium: { name: 'Auditorium', coords: [26.190939272712182, 91.69306307381973] }
+      Lakeside_Stalls: { name: 'Lakeside Stalls', coords: [26.190059, 91.693818] },
+      Auditorium: { name: 'Auditorium', coords: [26.190939272712182, 91.69306307381973] },
+      IITG_Circle: { name: 'IITG_Circle', coords: [26.190204, 91.692979] },
+      Core_5: { name: 'Core 5', coords: [26.185735, 91.689432] }
     };
 
     function pinSVG(color) {
@@ -204,7 +206,7 @@ function setupMap() {
     });
 
     // after markers created, activate the default location to zoom in
-    activateLocation('auditorium', locations);
+    activateLocation('Auditorium', locations);
 
     function activateLocation(key, locationsObj) {
       const loc = locationsObj[key];
@@ -238,14 +240,73 @@ function renderMapEvents() {
   list.innerHTML = data.map(e => `<div class="event-item"><span>${e.t}</span><span>${e.time}</span></div>`).join('');
 }
 
-let currentLoc = 'auditorium', currentDay = 1;
+let currentLoc = 'Auditorium', currentDay = 1;
 
-const mapData = {
-  Lecture_Halls: { name: 'Lecture Halls', 1: [{ t: 'Keynote', time: '10:00 AM' }], 2: [{ t: 'Workshop', time: '11:00 AM' }], 3: [{ t: 'Talk', time: '10:00 AM' }] },
-  Conference_Hall: { name: 'Conference Hall', 1: [{ t: 'Panel', time: '9:00 AM' }], 2: [{ t: 'Hackathon', time: '10:00 AM' }], 3: [{ t: 'Closing', time: '12:00 PM' }] },
-  hallC: { name: 'Hall C', 1: [{ t: 'Workshop', time: '11:00 AM' }], 2: [{ t: 'Panel', time: '1:00 PM' }], 3: [{ t: 'Session', time: '9:30 AM' }] },
-  auditorium: { name: 'Auditorium', 1: [{ t: 'Disrupt Finale', time: '9:00 AM' }, { t: 'Startup Pitch', time: '10:30 AM' }, { t: 'Networking Session', time: '12:00 PM' }], 2: [{ t: 'Showcase', time: '12:00 PM' }], 3: [{ t: 'Awards', time: '11:00 AM' }] }
-};
+// Hardcoded row -> canonical venue mapping (based on your table)
+// grid1 -> day 1, grid2 -> day 2, grid3 -> day 3
+const mapData = (() => {
+  function fmtTime(hourFloat) {
+    const hour = Math.floor(hourFloat);
+    const minutes = Math.round((hourFloat - hour) * 60);
+    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const displayHour = ((hour + 11) % 12) + 1;
+    return `${displayHour}:${String(minutes).padStart(2, '0')} ${ampm}`;
+  }
+
+  // mapping for grid1 (day0 in your list) — only auditorium
+  const grid1Map = { 0: 'Auditorium' };
+
+  // mapping for grid2 (your day1 list) — rows 0..9
+  const grid2Map = {
+    0: 'Conference_Hall',
+    1: 'Conference_Hall',
+    2: 'Conference_Hall',
+    3: 'Core_5',
+    4: 'Core_5',
+    5: 'Auditorium', // mini auditorium
+    6: 'Lecture_Halls',
+    7: 'Lakeside_Stalls', // conference room
+    8: 'IITG_Circle',
+    9: 'Auditorium',
+  };
+
+  // mapping for grid3 (your day2 list) — rows 0..14
+  const grid3Map = {
+    0: 'Conference_Hall',
+    1: 'Conference_Hall',
+    2: 'Core_5',
+    3: 'Core_5',
+    4: 'Core_5',
+    5: 'Lecture_Halls',
+    6: 'Lecture_Halls',
+    7: 'Lakeside_Arena',
+    8: 'Conference_Center_Hall',
+    9: 'Lakeside_Stalls',
+    10: 'Auditorium',
+    11: 'Auditorium',
+    12: 'Library_Basement',
+    13: 'IITG_Circle',
+    14: 'IITG_Circle'
+  };
+
+  const allKeys = new Set([...Object.values(grid1Map), ...Object.values(grid2Map), ...Object.values(grid3Map)]);
+  const md = {};
+  allKeys.forEach(k => { md[k] = { name: k.replace(/_/g, ' '), 1: [], 2: [], 3: [] }; });
+
+  Object.entries(dayEvents).forEach(([gridId, events]) => {
+    const day = gridId === 'grid1' ? 1 : gridId === 'grid2' ? 2 : 3;
+    const mapForGrid = gridId === 'grid1' ? grid1Map : gridId === 'grid2' ? grid2Map : grid3Map;
+    (events || []).forEach(ev => {
+      const row = typeof ev.row === 'number' ? ev.row : 0;
+      const key = mapForGrid[row] || 'Conference_Hall';
+      if (!md[key]) md[key] = { name: key.replace(/_/g, ' '), 1: [], 2: [], 3: [] };
+      md[key][day].push({ t: ev.title || '', time: fmtTime(ev.start) });
+    });
+  });
+
+  return md;
+})();
+
 
 function attach(node, event, handler) {
   node && node.addEventListener && node.addEventListener(event, handler);
