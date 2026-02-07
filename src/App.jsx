@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "../pages/Home";
 import Navbar from "./assets/Components/Navbar";
 import Footer from "./assets/Components/Footer";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} /> 
       </Routes>
       <Footer />
+      <Analytics />
     </>
   );
 }
